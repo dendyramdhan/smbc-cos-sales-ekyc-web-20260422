@@ -3,10 +3,15 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev --turbopack",
-    "build": "next build --turbopack",
-    "start": "next start",
-    "lint": "eslint"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "NODE_ENV=production node server.js",
+    "lint": "next lint",
+    "fix-lint": "eslint --fix .",
+    "test:coverage": "TZ=Asia/Jakarta jest --coverage",
+    "test:coverageUpdateSnapshot": "TZ=Asia/Jakarta jest --coverage -u",
+    "test": "TZ=Asia/Jakarta jest",
+    "test:updateSnapshot": "TZ=Asia/Jakarta jest -u"
   },
   "dependencies": {
     "@chakra-ui/next-js": "^2.4.2",
