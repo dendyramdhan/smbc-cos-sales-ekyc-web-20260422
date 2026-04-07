@@ -1,0 +1,59 @@
+"use client";
+
+import { Flex, Box, Text, Avatar, Button, HStack, ThemeProvider } from "@chakra-ui/react";
+import { LogOut } from "lucide-react";
+
+export default function Header() {
+  const handleLogout = () => {
+    alert("Logout clicked");
+  };
+
+  return (
+    <Flex
+      as="header"
+      w="full"
+      h="72px"
+      bg="surface.light"
+      borderBottom="1px solid"
+      borderColor="gray.200"
+      px={6}
+      align="center"
+      justify="flex-end"
+      boxShadow="sm"
+      position="sticky"
+      top={0}
+      zIndex={100}
+    >
+      <HStack spacing={6}>
+        <HStack
+          spacing={3}
+          bg="gray.50"
+          border="1px solid"
+          borderColor="gray.100"
+          borderRadius="full"
+          pl={1}
+          pr={4}
+          py={1}
+        >
+          <Avatar size="sm" name="User Profile" bg="brand.500" color="white" />
+          <Text fontSize="sm" fontWeight="semibold" color="gray.700">
+            User Profile
+          </Text>
+        </HStack>
+
+        <Button
+          onClick={handleLogout}
+          variant="ghost"
+          colorScheme="gray"
+          leftIcon={<LogOut size={16} />}
+          size="sm"
+          fontWeight="semibold"
+          color="gray.600"
+          _hover={{ bg: 'red.50', color: 'red.600' }}
+        >
+          Logout
+        </Button>
+      </HStack>
+    </Flex>
+  );
+}
