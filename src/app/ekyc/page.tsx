@@ -104,39 +104,13 @@ export default function Home() {
             </Flex>
             <Box>
               <Text fontSize="4xl" fontWeight="bold" color="white" lineHeight="1.2">
-                Welcome back
+                Welcome
               </Text>
               <Text fontSize="lg" color="brand.100" mt={1}>
-                Here is what's happening today
+                Good Morning
               </Text>
             </Box>
           </Flex>
-          
-          <SimpleGrid columns={{ base: 1, md: 3 }} spacing={6} position="relative" zIndex={1}>
-            <Box bg="whiteAlpha.100" backdropFilter="blur(5px)" p={5} borderRadius="xl" border="1px solid" borderColor="whiteAlpha.200">
-              <HStack color="brand.100" mb={3}>
-                <Icon as={ClipboardList} boxSize={5} />
-                <Text fontSize="sm" fontWeight="medium">Total Onboards</Text>
-              </HStack>
-              <Text fontSize="3xl" fontWeight="bold" color="white">{metrics?.totalOnboards || 0}</Text>
-            </Box>
-            
-            <Box bg="whiteAlpha.100" backdropFilter="blur(5px)" p={5} borderRadius="xl" border="1px solid" borderColor="whiteAlpha.200">
-              <HStack color="brand.100" mb={3}>
-                <Icon as={Clock} boxSize={5} />
-                <Text fontSize="sm" fontWeight="medium">Pending Reviews</Text>
-              </HStack>
-              <Text fontSize="3xl" fontWeight="bold" color="white">{metrics?.pendingReviews || 0}</Text>
-            </Box>
-            
-            <Box bg="whiteAlpha.100" backdropFilter="blur(5px)" p={5} borderRadius="xl" border="1px solid" borderColor="whiteAlpha.200">
-              <HStack color="brand.100" mb={3}>
-                <Icon as={CheckCircle} boxSize={5} />
-                <Text fontSize="sm" fontWeight="medium">Completed</Text>
-              </HStack>
-              <Text fontSize="3xl" fontWeight="bold" color="white">{metrics?.completed || 0}</Text>
-            </Box>
-          </SimpleGrid>
         </Box>
 
         {/* Lower Grid for Activities and Notifications */}
