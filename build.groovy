@@ -28,10 +28,13 @@ node() {
         }
 
         stage("build artifact") {
-                dockerRun image: 'nexus.corp.bankbtpn.co.id:50001/openshift/ubi8-nodejs:18.20.4', cmd: 'npm install --unsafe-perm --registry https://nexus.corp.bankbtpn.co.id/repository/npm-public'
-                dockerRun image: 'nexus.corp.bankbtpn.co.id:50001/openshift/ubi8-nodejs:18.20.4', cmd: 'npm run lint'
+            configFileProvider([configFile(fileId: 'vars', variable: 'vars')]) {
+                dockerRun image: 'nexus.corp.bankbtpn.co.id:50001/openshift/ubi8-nodejs:18.20.4', vars: "${vars}", cmd: 'npm install --unsafe-perm --registry https://nexus.corp.bankbtpn.co.id/repository/npm-public'
+                dockerRun image: 'nexus.corp.bankbtpn.co.id:50001/openshift/ubi8-nodejs:18.20.4', vars: "${vars}", cmd: 'npm run lint'
 
-                dockerRun image: 'nexus.corp.bankbtpn.co.id:50001/openshift/ubi8-nodejs:18.20.4', cmd: 'npm run build'
+                dockerRun image: 'nexus.corp.bankbtpn.co.id:50001/openshift/ubi8-nodejs:18.20.4', vars: "${vars}", cmd: 'npm run build'
+
+            }
         }
 
         stage("build image") {
