@@ -87,6 +87,7 @@ objects:
         app: ekyc-web
     spec:
       host: 'ekyc-web-${namespace}.${domain}'
+      path: '/ekyc'
       to:
         kind: Service
         name: ekyc-web
