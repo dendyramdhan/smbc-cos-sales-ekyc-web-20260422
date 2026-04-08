@@ -53,13 +53,13 @@ node() {
         }
 
         stage("tag & push") {
-            dockerTag source: "${nsService}:${version}", to: "${dockerNexus}/${nsService}:${version}"
-            dockerPush image: "${dockerNexus}/${nsService}:${version}", to: dockerNexus, credentialsId: nexusCred
+            dockerTag source: "${nsService}:${version}", to: "${dockerRegistry}/${namespace}/ekyc-web:${version}"
+            // dockerTag source: "${nsService}:${version}", to: "${dockerNexus}/${nsService}:${version}"
+            // dockerPush image: "${dockerNexus}/${nsService}:${version}", to: dockerNexus, credentialsId: nexusCred
         }
 
         stage("deploy") {
-            ocpDeploy session: "${namespace}-vcs-web-app-int-${BUILD_NUMBER}", namespace: namespace, serviceName: serviceName, ocpUrl: ocpUrl, ocpCredential: ocpCredential, dockerRegistry: dockerRegistry, image: "${dockerNexus}/${nsService}:${version}", template: "deploy/template.yml", variable: "deploy/dev.env", parameters: "domain=${domain} namespace=${namespace} version=${version} replica=${replica}"
-//            osmDeployObm namespace: namespace, serviceName: serviceName, ocpUrl: ocpUrl, ocpCredential: ocpCredential, dockerRegistry: dockerRegistry, image:"${dockerNexus}/${nsService}:${version}", deployment: "deploy/deployment.yaml", route: "deploy/route.yaml", parameters: "namespace=${namespace} appname=${serviceName} version=${version} route=${route} replica=${replica}"
+            ocpDeploy session: "${namespace}-ekyc-web-${BUILD_NUMBER}", namespace: namespace, serviceName: serviceName, ocpUrl: ocpUrl, ocpCredential: ocpCredential, dockerRegistry: dockerRegistry, image: "${dockerNexus}/${nsService}:${version}", template: "deploy/template.yml", variable: "deploy/dev.env", parameters: "domain=${domain} namespace=${namespace} version=${version} replica=${replica}"
         }
     }
 }
