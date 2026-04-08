@@ -86,7 +86,7 @@ objects:
       labels:
         app: ekyc-web
     spec:
-      host: 'ekyc-web-${namespace}.${domain}'
+      host: 'cap-admin-${namespace}.${domain}'
       path: '/ekyc'
       to:
         kind: Service
