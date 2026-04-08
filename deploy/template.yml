@@ -110,3 +110,7 @@ parameters:
     displayName: version app
     value: ''
     required: true
+  - name: replica
+    displayName: replica count
+    value: ''
+    required: true
