@@ -7,10 +7,6 @@ const config: ThemeConfig = {
 
 const theme = extendTheme({
   config,
-  fonts: {
-    heading: 'var(--font-inter), sans-serif',
-    body: 'var(--font-inter), sans-serif',
-  },
   colors: {
     brand: {
       50: '#f0fdf4',
