@@ -1,12 +1,16 @@
-FROM nexus.corp.bankbtpn.co.id:50001/openshift/nginx.rhel7.2
+FROM nexus.corp.bankbtpn.co.id:50001/openshift/ubi8-nodejs:18.20.4
+WORKDIR /app
 
-LABEL maintainer="btpn-devops"
-RUN mkdir -p /var/www/html/dist
-ADD application.tar.gz /usr/share/nginx/html
-COPY nginx.conf /etc/nginx/conf.d/
-ADD start.sh /usr/local/bin/
-RUN ["chmod", "+x", "/usr/local/bin/start.sh"]
-RUN ["chmod", "777", "/var/www/html/dist"]
-RUN ["chmod", "777", "/var/www/html"]
+ENV NODE_ENV production
+RUN groupadd --system --gid 1002 nodejs
+RUN useradd --system --uid 1002 nextjs
+COPY public ./public
+# Automatically leverage output traces to reduce image size
+# https://nextjs.org/docs/advanced-features/output-file-tracing
+COPY .next/standalone .
+COPY .next/static .next/static
+RUN chown nextjs:nodejs /app/*
+USER nextjs
 EXPOSE 8080
-ENTRYPOINT ["/usr/local/bin/start.sh"]
+ENV PORT 8080
+CMD ["node", "server.js"]

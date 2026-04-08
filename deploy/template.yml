@@ -29,7 +29,7 @@ objects:
               kind: ImageStreamTag
               namespace: '${namespace}'
               name: 'ekyc-web:${version}'
-      replicas: 2
+      replicas: ${{replica}}
       test: false
       selector:
         app: ekyc-web
@@ -86,7 +86,8 @@ objects:
       labels:
         app: ekyc-web
     spec:
-      host: 'ekyc-web-${namespace}.${domain}'
+      host: 'cap-admin-${namespace}.${domain}'
+      path: '/ekyc'
       to:
         kind: Service
         name: ekyc-web
@@ -107,5 +108,9 @@ parameters:
     required: true
   - name: version
     displayName: version app
+    value: ''
+    required: true
+  - name: replica
+    displayName: replica count
     value: ''
     required: true
