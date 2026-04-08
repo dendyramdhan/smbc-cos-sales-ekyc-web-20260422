@@ -29,7 +29,7 @@ objects:
               kind: ImageStreamTag
               namespace: '${namespace}'
               name: 'ekyc-web:${version}'
-      replicas: 2
+      replicas: ${{replica}}
       test: false
       selector:
         app: ekyc-web
