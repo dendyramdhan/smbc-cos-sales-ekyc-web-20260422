@@ -2,16 +2,9 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Box, Flex, Text, VStack, HStack, Icon, Badge } from "@chakra-ui/react";
+import { Box, Flex, Text, VStack, HStack, Icon } from "@chakra-ui/react";
 import { 
-  House, 
-  UserPlus, 
-  Users, 
-  UserMinus, 
-  PieChart, 
-  Clock, 
-  BellRing, 
-  FileEdit 
+  House
 } from "lucide-react";
 
 export default function Sidebar() {
@@ -19,7 +12,6 @@ export default function Sidebar() {
 
   const menuItems = [
     { id: 1, label: "HOME", href: "/ekyc", icon: House },
-    { id: 2, label: "NEW ONBOARD", href: "/new-onboard", icon: UserPlus },
   ];
 
   return (

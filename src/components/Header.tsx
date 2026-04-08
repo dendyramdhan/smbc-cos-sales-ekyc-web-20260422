@@ -1,6 +1,6 @@
 "use client";
 
-import { Flex, Box, Text, Avatar, Button, HStack, ThemeProvider } from "@chakra-ui/react";
+import { Flex, Text, Avatar, Button, HStack } from "@chakra-ui/react";
 import { LogOut } from "lucide-react";
 
 export default function Header() {
