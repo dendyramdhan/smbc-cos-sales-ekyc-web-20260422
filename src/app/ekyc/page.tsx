@@ -10,18 +10,6 @@ import {
 } from '@chakra-ui/react';
 
 export default function Home() {
-  const getTimeAgo = (timestamp: string) => {
-    const date = new Date(timestamp);
-    const now = new Date();
-    const diffMs = now.getTime() - date.getTime();
-    const diffMins = Math.floor(diffMs / 60000);
-    const diffHours = Math.floor(diffMins / 60);
-    const diffDays = Math.floor(diffHours / 24);
-
-    if (diffMins < 60) return `${diffMins} mins ago`;
-    if (diffHours < 24) return `${diffHours} hrs ago`;
-    return `${diffDays} days ago`;
-  };
 
   return (
     <DashboardLayout>
