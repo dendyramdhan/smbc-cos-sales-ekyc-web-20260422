@@ -14,7 +14,7 @@ node() {
         def dockerRegistry = "default-route-openshift-image-registry.apps.ms.dev.corp.btpn.co.id"
         def domain = "apps.ms-bm.dev.corp.btpn.co.id"
         def ocpUrl = "https://api.ms-bm.dev.corp.btpn.co.id:6443"
-        def nsService = "Customer-Administrative-Platform/ekyc-web"
+        def nsService = "customer-administrative-platform/ekyc-web"
         def namespace = "customer-administrative-platform-dev"
         def nexusCred = "NEXUS_REGISTRY"
         def ocpCredential = "OBM_DEV"

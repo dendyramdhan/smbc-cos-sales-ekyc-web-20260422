@@ -1,12 +1,10 @@
 'use client';
 
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import { useRouter } from 'next/navigation';
 import DashboardLayout from "@/components/DashboardLayout";
 import { 
   Hand, 
-  ClipboardList, 
-  Clock, 
   CheckCircle, 
   BarChart3, 
   Bell, 
@@ -196,7 +194,7 @@ export default function Home() {
                   })
                 ) : (
                   <Center py={8}>
-                    <Text color="gray.400" fontSize="sm">You're all caught up!</Text>
+                    <Text color="gray.400" fontSize="sm">You caught up!</Text>
                   </Center>
                 )}
               </VStack>
