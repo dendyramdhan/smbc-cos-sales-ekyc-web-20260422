@@ -1,0 +1,111 @@
+kind: Template
+apiVersion: v1
+objects:
+  - kind: DeploymentConfig
+    apiVersion: v1
+    metadata:
+      name: ekyc-web
+      labels:
+        app: ekyc-web
+    spec:
+      strategy:
+        type: Rolling
+        rollingParams:
+          updatePeriodSeconds: 1
+          intervalSeconds: 1
+          timeoutSeconds: 600
+          maxUnavailable: 25%
+          maxSurge: 25%
+      triggers:
+        -
+          type: ConfigChange
+        -
+          type: ImageChange
+          imageChangeParams:
+            automatic: true
+            containerNames:
+              - ekyc-web
+            from:
+              kind: ImageStreamTag
+              namespace: '${namespace}'
+              name: 'ekyc-web:${version}'
+      replicas: 2
+      test: false
+      selector:
+        app: ekyc-web
+        deploymentconfig: ekyc-web
+      template:
+        metadata:
+          creationTimestamp: null
+          labels:
+            app: ekyc-web
+            deploymentconfig: ekyc-web
+        spec:
+          containers:
+            -
+              name: ekyc-web
+              image: '${namespace}/ekyc-web:${version}'
+              ports:
+                -
+                  containerPort: 8080
+                  protocol: TCP
+              resources:
+                limits:
+                  cpu: 200m
+                  memory: 512Mi
+                requests:
+                  cpu: 100m
+                  memory: 128Mi
+              imagePullPolicy: Always
+          restartPolicy: Always
+          terminationGracePeriodSeconds: 30
+          dnsPolicy: ClusterFirst
+          securityContext:
+            supplementalGroups:
+              - 1100
+  - kind: Service
+    apiVersion: v1
+    metadata:
+      name: ekyc-web
+      labels:
+        app: ekyc-web
+    spec:
+      ports:
+        -
+          name: 8080-tcp
+          protocol: TCP
+          port: 8080
+          targetPort: 8080
+      selector:
+        app: ekyc-web
+        deploymentconfig: ekyc-web                 
+  - kind: Route
+    apiVersion: v1
+    metadata:
+      name: ekyc-web
+      labels:
+        app: ekyc-web
+    spec:
+      host: 'ekyc-web-${namespace}.${domain}'
+      to:
+        kind: Service
+        name: ekyc-web
+      port:
+        targetPort: 8080-tcp
+      tls:
+        termination: edge
+        insecureEdgeTerminationPolicy: Allow
+        wildcardPolicy: None
+parameters:
+  - name: domain
+    displayName: app domain
+    value: ''
+    required: true
+  - name: namespace
+    displayName: openshift docker registry namespace
+    value: ''
+    required: true
+  - name: version
+    displayName: version app
+    value: ''
+    required: true
