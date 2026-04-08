@@ -53,9 +53,8 @@ node() {
         }
 
         stage("tag & push") {
-            dockerTag source: "${nsService}:${version}", to: "${dockerRegistry}/${namespace}/ekyc-web:${version}"
-            // dockerTag source: "${nsService}:${version}", to: "${dockerNexus}/${nsService}:${version}"
-            // dockerPush image: "${dockerNexus}/${nsService}:${version}", to: dockerNexus, credentialsId: nexusCred
+            dockerTag source: "${nsService}:${version}", to: "${dockerNexus}/${nsService}:${version}"
+            dockerPush image: "${dockerNexus}/${nsService}:${version}", to: dockerNexus, credentialsId: nexusCred
         }
 
         stage("deploy") {
