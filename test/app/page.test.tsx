@@ -1,17 +1,11 @@
-// test/Home.test.tsx
-import { render } from "@testing-library/react";
-import Home from "@/app/page";
+import Home from '@/app/page';
+import { render, screen } from '@/utils/test-utils';
 
-// Mock next/navigation
-jest.mock("next/navigation", () => ({
-  redirect: jest.fn(),
-}));
-
-import { redirect } from "next/navigation";
-
-describe("Home page redirect", () => {
-  it("should call redirect to /ekyc", () => {
+describe('Home Page Component', () => {
+  it('renders the welcome banner correctly', () => {
     render(<Home />);
-    expect(redirect).toHaveBeenCalledWith("/ekyc");
+
+    expect(screen.getByText('Welcome')).toBeInTheDocument();
+    expect(screen.getByText('Good Morning')).toBeInTheDocument();
   });
 });

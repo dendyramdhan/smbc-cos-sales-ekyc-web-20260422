@@ -7,7 +7,6 @@ node() {
 
         def serviceName = "${env.gitlabSourceRepoName}"
 
-        //get version from tag
         def version = env.gitlabSourceBranch.replace("refs/tags/", "")
 
         def dockerNexus = "nexus.corp.bankbtpn.co.id:50003"
@@ -24,23 +23,20 @@ node() {
 
         stage("build version") {
             sh "sed \"s/0.0.0/${version}/g\" package.json > package-temp.json && rm package.json && mv package-temp.json package.json";
-//            sh "sed \"s/0.0.0/${version}/g\" nginx.conf > nginx-temp.conf && rm nginx.conf && mv nginx-temp.conf nginx.conf";
         }
 
         stage("build artifact") {
-            // configFileProvider([configFile(fileId: 'vars', variable: 'vars')]) {
-                dockerRun image: 'nexus.corp.bankbtpn.co.id:50001/openshift/ubi8-nodejs:18.20.4', cmd: 'npm install --unsafe-perm --registry https://nexus.corp.bankbtpn.co.id/repository/npm-public'
-                dockerRun image: 'nexus.corp.bankbtpn.co.id:50001/openshift/ubi8-nodejs:18.20.4', cmd: 'npm run lint'
+            dockerRun image: 'nexus.corp.bankbtpn.co.id:50001/openshift/nodejs-22:10.1-1767601359', \
+                cmd: 'sh -c "npm ci --registry https://nexus.corp.bankbtpn.co.id/repository/npm-public && npm run lint && npm run test:coverage && npm run build"'
+        }
 
-                dockerRun image: 'nexus.corp.bankbtpn.co.id:50001/openshift/ubi8-nodejs:18.20.4', cmd: 'npm run build'
-
-            // }
+        stage("scanning component") {
+            dockerRun image: 'nexus.corp.bankbtpn.co.id:50001/openshift/sonar-runner:8.0.1', 
+                        env: 'SONAR_SCANNER_OPTS="-Dsonar.scanner.truststorePassword=changeit -Xmx8192m"',
+                        cmd: 'sonar-scanner'
         }
 
         stage("build image") {
-//            dir("build") {
-//                sh "tar -zcvf ../application.tar.gz *";
-//            }
             dockerBuild image: "${nsService}:${version}", workdir: pwd()
         }
 

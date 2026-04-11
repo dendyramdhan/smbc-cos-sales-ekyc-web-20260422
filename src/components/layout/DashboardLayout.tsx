@@ -1,6 +1,6 @@
-import { Flex, Box } from "@chakra-ui/react";
-import Header from "./Header";
-import Sidebar from "./Sidebar";
+import { Flex, Box } from '@chakra-ui/react';
+import Header from './Header';
+import Sidebar from './Sidebar';
 
 export default function DashboardLayout({
   children,
@@ -12,7 +12,14 @@ export default function DashboardLayout({
       <Header />
       <Flex flex="1">
         <Sidebar />
-        <Box as="main" flex="1" p={8} bg="background" overflowY="auto" h="calc(100vh - 72px)">
+        <Box
+          as="main"
+          flex="1"
+          p={8}
+          bg="background"
+          overflowY="auto"
+          h="calc(100vh - 72px)"
+        >
           {children}
         </Box>
       </Flex>

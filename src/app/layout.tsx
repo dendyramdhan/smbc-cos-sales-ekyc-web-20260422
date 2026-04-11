@@ -1,10 +1,11 @@
-import type { Metadata } from "next";
-import { Providers } from "./providers";
-import "./globals.css";
+import type { Metadata } from 'next';
+import './globals.css';
+import DashboardLayout from '@/components/layout/DashboardLayout';
+import Providers from '@/components/providers/Providers';
 
 export const metadata: Metadata = {
-  title: "KYC Dashboard - SMBC",
-  description: "Advanced KYC Checklist BES System",
+  title: 'KYC Dashboard - SMBC',
+  description: 'Advanced KYC Checklist BES System',
 };
 
 export default function RootLayout({
@@ -13,10 +14,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html suppressHydrationWarning lang="en">
       <body>
         <Providers>
-          {children}
+          <DashboardLayout>{children}</DashboardLayout>
         </Providers>
       </body>
     </html>

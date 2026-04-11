@@ -1,28 +1,41 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
+import type { NextConfig } from 'next';
+
+const nextConfig: NextConfig = {
   reactStrictMode: false,
   output: 'standalone',
-  eslint: {
-    dirs: ['src', 'test']
-  },
   poweredByHeader: false,
+  transpilePackages: ['@chakra-ui/react'],
+  basePath: '/ekyc',
+  experimental: {
+    optimizePackageImports: ['@chakra-ui/react'],
+  },
   async headers() {
     return [
       {
-        source: '/(.*)', // all routes
+        source: '/(.*)',
         headers: [
           {
             key: 'X-Frame-Options',
-            value: 'SAMEORIGIN'
+            value: 'SAMEORIGIN',
           },
           {
             key: 'Content-Security-Policy',
-            value: 'frame-ancestors \'self\''
-          }
-        ]
-      }
+            value: 'frame-ancestors \'self\'',
+          },
+        ],
+      },
     ];
-  }
+  },
+  async redirects() {
+    return [
+      {
+        source: '/',
+        destination: '/ekyc',
+        permanent: false,
+        basePath: false,
+      },
+    ];
+  },
 };
 
-module.exports = nextConfig;
+export default nextConfig;
