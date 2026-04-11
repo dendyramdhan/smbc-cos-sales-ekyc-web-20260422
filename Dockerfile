@@ -1,4 +1,4 @@
-FROM nexus.corp.bankbtpn.co.id:50001/openshift/ubi8-nodejs:18.20.4
+FROM nexus.corp.bankbtpn.co.id:50001/openshift/nodejs-22:10.1-1767601359
 WORKDIR /app
 
 ENV NODE_ENV production
