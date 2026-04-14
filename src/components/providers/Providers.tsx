@@ -12,7 +12,7 @@ type ProvidersProps = {
 const Providers: React.FC<ProvidersProps> = ({ children }: ProvidersProps) => {
   return (
     <ChakraProvider value={system}>
-      <ThemeProvider attribute="class">{children}</ThemeProvider>
+      <ThemeProvider attribute="class" defaultTheme='light' enableSystem={false}>{children}</ThemeProvider>
     </ChakraProvider>
   );
 };
