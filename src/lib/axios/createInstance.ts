@@ -1,5 +1,6 @@
 import axios, { type AxiosInstance } from 'axios';
 import { type AxiosInstanceConfig } from './types';
+import { API_CONFIG } from '@/constants/apiConfig';
 
 export const createAxiosInstance = (config: AxiosInstanceConfig = {}): AxiosInstance => {
   const { label, withAuth, withLogging, ...axiosConfig } = config;
@@ -8,7 +9,7 @@ export const createAxiosInstance = (config: AxiosInstanceConfig = {}): AxiosInst
   void withLogging;
 
   return axios.create({
-    timeout: 15000,
+    timeout: API_CONFIG.TIMEOUT,
     headers: { 'Content-Type': 'application/json' },
     ...axiosConfig
   });
