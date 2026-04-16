@@ -11,6 +11,10 @@ const customJestConfig: Config = {
     '^@/(.*)$': '<rootDir>/src/$1',
   },
   testEnvironment: './FixJSDOMEnvironment.ts',
+  coveragePathIgnorePatterns: [
+    '/node_modules/',
+    'src/.+/index\\.ts$',
+  ],
 };
 
 export default createJestConfig(customJestConfig);
