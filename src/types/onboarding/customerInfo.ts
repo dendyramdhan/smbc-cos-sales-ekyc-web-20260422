@@ -1,0 +1,29 @@
+export interface CustomerInfoData {
+  customerType: string;
+  checklistStatus: string;
+  checklistStage: string;
+  capId: string;
+  besReferenceNo: string;
+  cifNo: string;
+  customerName: string;
+  formerlyKnownAs: string;
+  businessNameAlsoKnownAs: string;
+  dateOfEstablishment: string;
+  legalEntityType: string;
+  legalEntityCharacteristic: string;
+  lineOfBusiness: string;
+  registerAddressCountry: string;
+  correspondenceAddressCountry: string;
+  rmRoName: string;
+  rmRoCode: string;
+  department: string;
+  finalRiskRating: string;
+  riskScore: string;
+  creationDate: string;
+  approvalDate: string;
+  previousChecklistId: string;
+  previousRiskRating: string;
+  nextReviewDueDate: string;
+  reviewedTo: string;
+  generalChecking: string[];
+}

@@ -1,0 +1,426 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CustomerInfoFormField should match snapshot for combobox type 1`] = `
+<div>
+  <script
+    nonce=""
+  >
+    ((e,s,n,l,o,d,u,h)=&gt;{let m=document.documentElement,w=["light","dark"];function p(r){(Array.isArray(e)?e:[e]).forEach(y=&gt;{let k=y==="class",S=k&&d?o.map(f=&gt;d[f]||f):o;k?(m.classList.remove(...S),m.classList.add(d&&d[r]?d[r]:r)):m.setAttribute(y,r)}),C(r)}function C(r){h&&w.includes(r)&&(m.style.colorScheme=r)}function a(){return window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light"}if(l)p(l);else try{let r=localStorage.getItem(s)||n,y=u&&r==="system"?a():r;p(y)}catch(r){}})("class","theme","light",null,["light","dark"],null,false,true)
+  </script>
+  <div>
+    <div
+      class="chakra-stack css-dh3r6g"
+    >
+      <p
+        class="css-1kuohir"
+      >
+        Customer Name
+      </p>
+      <svg
+        aria-hidden="true"
+        class="lucide lucide-pencil"
+        fill="none"
+        height="11"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        viewBox="0 0 24 24"
+        width="11"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z"
+        />
+        <path
+          d="m15 5 4 4"
+        />
+      </svg>
+    </div>
+    <div
+      class="chakra-combobox__root css-1oswll3"
+      data-part="root"
+      data-scope="combobox"
+      dir="ltr"
+      id="combobox:_r_0_"
+    >
+      <div
+        class="chakra-combobox__control css-16zir93"
+        data-part="control"
+        data-scope="combobox"
+        data-state="closed"
+        dir="ltr"
+        id="combobox:_r_0_:control"
+      >
+        <input
+          aria-autocomplete="list"
+          aria-controls="combobox:_r_0_:content"
+          aria-expanded="false"
+          autocapitalize="none"
+          autocomplete="off"
+          autocorrect="off"
+          class="chakra-combobox__input css-f77nkl"
+          data-part="input"
+          data-scope="combobox"
+          data-state="closed"
+          dir="ltr"
+          id="combobox:_r_0_:input"
+          placeholder="Search..."
+          role="combobox"
+          spellcheck="false"
+          type="text"
+          value="Japan"
+        />
+        <button
+          aria-expanded="false"
+          aria-haspopup="listbox"
+          aria-label="Toggle suggestions"
+          class="chakra-combobox__trigger css-1t9arez"
+          data-part="trigger"
+          data-scope="combobox"
+          data-state="closed"
+          dir="ltr"
+          id="combobox:_r_0_:toggle-btn"
+          tabindex="-1"
+          type="button"
+        >
+          <svg
+            aria-hidden="true"
+            class="lucide lucide-chevrons-up-down"
+            fill="none"
+            height="14"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+            width="14"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="m7 15 5 5 5-5"
+            />
+            <path
+              d="m7 9 5-5 5 5"
+            />
+          </svg>
+        </button>
+      </div>
+      <div
+        class="chakra-combobox__positioner"
+        data-part="positioner"
+        data-scope="combobox"
+        dir="ltr"
+        id="combobox:_r_0_:popper"
+        style="position: absolute; isolation: isolate; pointer-events: none; top: 0px; left: 0px; transform: translate3d(0, -100vh, 0); z-index: var(--z-index);"
+      >
+        <div
+          aria-labelledby="combobox:_r_0_:label"
+          class="chakra-combobox__content css-ug570"
+          data-part="content"
+          data-scope="combobox"
+          data-state="closed"
+          dir="ltr"
+          hidden=""
+          id="combobox:_r_0_:content"
+          role="listbox"
+          tabindex="-1"
+        >
+          <div
+            aria-selected="true"
+            class="chakra-combobox__item css-ib6kub"
+            data-part="item"
+            data-scope="combobox"
+            data-state="checked"
+            data-value="Japan"
+            dir="ltr"
+            id="combobox:_r_0_:option:Japan"
+            role="option"
+            tabindex="-1"
+          >
+            <span
+              class="chakra-combobox__itemText css-apustk"
+              data-part="item-text"
+              data-scope="combobox"
+              data-state="checked"
+              dir="ltr"
+            >
+              Japan
+            </span>
+            <div
+              aria-hidden="true"
+              class="chakra-combobox__itemIndicator css-1it38y5"
+              data-part="item-indicator"
+              data-scope="combobox"
+              data-state="checked"
+              dir="ltr"
+            >
+              ✓
+            </div>
+          </div>
+          <div
+            class="chakra-combobox__item css-ib6kub"
+            data-part="item"
+            data-scope="combobox"
+            data-state="unchecked"
+            data-value="Indonesia"
+            dir="ltr"
+            id="combobox:_r_0_:option:Indonesia"
+            role="option"
+            tabindex="-1"
+          >
+            <span
+              class="chakra-combobox__itemText css-apustk"
+              data-part="item-text"
+              data-scope="combobox"
+              data-state="unchecked"
+              dir="ltr"
+            >
+              Indonesia
+            </span>
+            <div
+              aria-hidden="true"
+              class="chakra-combobox__itemIndicator css-1it38y5"
+              data-part="item-indicator"
+              data-scope="combobox"
+              data-state="unchecked"
+              dir="ltr"
+              hidden=""
+            >
+              ✓
+            </div>
+          </div>
+          <div
+            class="chakra-combobox__item css-ib6kub"
+            data-part="item"
+            data-scope="combobox"
+            data-state="unchecked"
+            data-value="Singapore"
+            dir="ltr"
+            id="combobox:_r_0_:option:Singapore"
+            role="option"
+            tabindex="-1"
+          >
+            <span
+              class="chakra-combobox__itemText css-apustk"
+              data-part="item-text"
+              data-scope="combobox"
+              data-state="unchecked"
+              dir="ltr"
+            >
+              Singapore
+            </span>
+            <div
+              aria-hidden="true"
+              class="chakra-combobox__itemIndicator css-1it38y5"
+              data-part="item-indicator"
+              data-scope="combobox"
+              data-state="unchecked"
+              dir="ltr"
+              hidden=""
+            >
+              ✓
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`CustomerInfoFormField should match snapshot for select type 1`] = `
+<div>
+  <script
+    nonce=""
+  >
+    ((e,s,n,l,o,d,u,h)=&gt;{let m=document.documentElement,w=["light","dark"];function p(r){(Array.isArray(e)?e:[e]).forEach(y=&gt;{let k=y==="class",S=k&&d?o.map(f=&gt;d[f]||f):o;k?(m.classList.remove(...S),m.classList.add(d&&d[r]?d[r]:r)):m.setAttribute(y,r)}),C(r)}function C(r){h&&w.includes(r)&&(m.style.colorScheme=r)}function a(){return window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light"}if(l)p(l);else try{let r=localStorage.getItem(s)||n,y=u&&r==="system"?a():r;p(y)}catch(r){}})("class","theme","light",null,["light","dark"],null,false,true)
+  </script>
+  <div>
+    <div
+      class="chakra-stack css-dh3r6g"
+    >
+      <p
+        class="css-1kuohir"
+      >
+        Customer Name
+      </p>
+      <svg
+        aria-hidden="true"
+        class="lucide lucide-pencil"
+        fill="none"
+        height="11"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        viewBox="0 0 24 24"
+        width="11"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z"
+        />
+        <path
+          d="m15 5 4 4"
+        />
+      </svg>
+    </div>
+    <div
+      class="chakra-native-select__root css-1b77ry"
+    >
+      <select
+        class="chakra-native-select__field css-mc3auk"
+      >
+        <option
+          value="Option A"
+        >
+          Option A
+        </option>
+        <option
+          value="Option B"
+        >
+          Option B
+        </option>
+      </select>
+      <div
+        class="chakra-native-select__indicator css-hydxzs"
+      >
+        <svg
+          class="css-s3mb0o"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="m6 9 6 6 6-6"
+          />
+        </svg>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`CustomerInfoFormField should match snapshot for system field in editing mode 1`] = `
+<div>
+  <script
+    nonce=""
+  >
+    ((e,s,n,l,o,d,u,h)=&gt;{let m=document.documentElement,w=["light","dark"];function p(r){(Array.isArray(e)?e:[e]).forEach(y=&gt;{let k=y==="class",S=k&&d?o.map(f=&gt;d[f]||f):o;k?(m.classList.remove(...S),m.classList.add(d&&d[r]?d[r]:r)):m.setAttribute(y,r)}),C(r)}function C(r){h&&w.includes(r)&&(m.style.colorScheme=r)}function a(){return window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light"}if(l)p(l);else try{let r=localStorage.getItem(s)||n,y=u&&r==="system"?a():r;p(y)}catch(r){}})("class","theme","light",null,["light","dark"],null,false,true)
+  </script>
+  <div>
+    <div
+      class="chakra-stack css-dh3r6g"
+    >
+      <p
+        class="css-12lewfz"
+      >
+        Customer Name
+      </p>
+      <svg
+        aria-hidden="true"
+        class="lucide lucide-lock"
+        fill="none"
+        height="11"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        viewBox="0 0 24 24"
+        width="11"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <rect
+          height="11"
+          rx="2"
+          ry="2"
+          width="18"
+          x="3"
+          y="11"
+        />
+        <path
+          d="M7 11V7a5 5 0 0 1 10 0v4"
+        />
+      </svg>
+    </div>
+    <input
+      class="chakra-input css-1ragpyb"
+      readonly=""
+      type="text"
+      value="SUZUKI MOTOR"
+    />
+  </div>
+</div>
+`;
+
+exports[`CustomerInfoFormField should match snapshot in editing mode 1`] = `
+<div>
+  <script
+    nonce=""
+  >
+    ((e,s,n,l,o,d,u,h)=&gt;{let m=document.documentElement,w=["light","dark"];function p(r){(Array.isArray(e)?e:[e]).forEach(y=&gt;{let k=y==="class",S=k&&d?o.map(f=&gt;d[f]||f):o;k?(m.classList.remove(...S),m.classList.add(d&&d[r]?d[r]:r)):m.setAttribute(y,r)}),C(r)}function C(r){h&&w.includes(r)&&(m.style.colorScheme=r)}function a(){return window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light"}if(l)p(l);else try{let r=localStorage.getItem(s)||n,y=u&&r==="system"?a():r;p(y)}catch(r){}})("class","theme","light",null,["light","dark"],null,false,true)
+  </script>
+  <div>
+    <div
+      class="chakra-stack css-dh3r6g"
+    >
+      <p
+        class="css-1kuohir"
+      >
+        Customer Name
+      </p>
+      <svg
+        aria-hidden="true"
+        class="lucide lucide-pencil"
+        fill="none"
+        height="11"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        viewBox="0 0 24 24"
+        width="11"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z"
+        />
+        <path
+          d="m15 5 4 4"
+        />
+      </svg>
+    </div>
+    <input
+      class="chakra-input css-5jedro"
+      type="text"
+      value="SUZUKI MOTOR"
+    />
+  </div>
+</div>
+`;
+
+exports[`CustomerInfoFormField should match snapshot in read-only mode 1`] = `
+<div>
+  <script
+    nonce=""
+  >
+    ((e,s,n,l,o,d,u,h)=&gt;{let m=document.documentElement,w=["light","dark"];function p(r){(Array.isArray(e)?e:[e]).forEach(y=&gt;{let k=y==="class",S=k&&d?o.map(f=&gt;d[f]||f):o;k?(m.classList.remove(...S),m.classList.add(d&&d[r]?d[r]:r)):m.setAttribute(y,r)}),C(r)}function C(r){h&&w.includes(r)&&(m.style.colorScheme=r)}function a(){return window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light"}if(l)p(l);else try{let r=localStorage.getItem(s)||n,y=u&&r==="system"?a():r;p(y)}catch(r){}})("class","theme","light",null,["light","dark"],null,false,true)
+  </script>
+  <div>
+    <div
+      class="chakra-stack css-dh3r6g"
+    >
+      <p
+        class="css-zi85lw"
+      >
+        Customer Name
+      </p>
+    </div>
+    <input
+      class="chakra-input css-1ragpyb"
+      readonly=""
+      type="text"
+      value="SUZUKI MOTOR"
+    />
+  </div>
+</div>
+`;

@@ -36,16 +36,28 @@ const config = defineConfig({
     tokens: {
       colors: {
         brand: {
-          50: { value: '#f0fdf4' },
-          100: { value: '#dcfce7' },
-          200: { value: '#bbf7d0' },
-          300: { value: '#86efac' },
-          400: { value: '#4ade80' },
-          500: { value: '#22c55e' },
-          600: { value: '#16a34a' },
-          700: { value: '#15803d' },
-          800: { value: '#166534' },
-          900: { value: '#14532d' },
+          50: { value: '#e6f2ed' },
+          100: { value: '#c0dfcf' },
+          200: { value: '#8fc4a8' },
+          300: { value: '#5aa882' },
+          400: { value: '#2d8f60' },
+          500: { value: '#00703d' },
+          600: { value: '#004b34' },
+          700: { value: '#003828' },
+          800: { value: '#00261b' },
+          900: { value: '#00150e' },
+        },
+        accent: {
+          50: { value: '#f7fcd6' },
+          100: { value: '#eef8ab' },
+          200: { value: '#e2f27a' },
+          300: { value: '#d4ea4d' },
+          400: { value: '#c8e12a' },
+          500: { value: '#bfd730' },
+          600: { value: '#9db020' },
+          700: { value: '#7a8a14' },
+          800: { value: '#57640c' },
+          900: { value: '#343d05' },
         },
         surface: {
           light: { value: '#ffffff' },
@@ -65,7 +77,7 @@ const config = defineConfig({
             solid: {
               bg: 'brand.600',
               color: 'white',
-              _hover: { bg: 'brand.700' },
+              _hover: { bg: 'accent.500', color: 'brand.600' },
             },
             ghost: {
               color: 'brand.600',

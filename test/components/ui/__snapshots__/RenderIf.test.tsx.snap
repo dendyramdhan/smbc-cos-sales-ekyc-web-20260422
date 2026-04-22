@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RenderIf should match snapshot when condition is false with RenderElse 1`] = `
+<div>
+  <span>
+    Fallback
+  </span>
+</div>
+`;
+
+exports[`RenderIf should match snapshot when condition is true 1`] = `
+<div>
+  <span>
+    Visible
+  </span>
+</div>
+`;
