@@ -1,0 +1,3747 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CustomerInfoStep should match snapshot in editing mode 1`] = `
+<div>
+  <script
+    nonce=""
+  >
+    ((e,s,n,l,o,d,u,h)=&gt;{let m=document.documentElement,w=["light","dark"];function p(r){(Array.isArray(e)?e:[e]).forEach(y=&gt;{let k=y==="class",S=k&&d?o.map(f=&gt;d[f]||f):o;k?(m.classList.remove(...S),m.classList.add(d&&d[r]?d[r]:r)):m.setAttribute(y,r)}),C(r)}function C(r){h&&w.includes(r)&&(m.style.colorScheme=r)}function a(){return window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light"}if(l)p(l);else try{let r=localStorage.getItem(s)||n,y=u&&r==="system"?a():r;p(y)}catch(r){}})("class","theme","light",null,["light","dark"],null,false,true)
+  </script>
+  <div>
+    <div
+      class="css-m8s6qp"
+    >
+      <div
+        class="chakra-stack css-wubxq4"
+      >
+        <div
+          class="chakra-stack css-141cw8v"
+        >
+          <svg
+            aria-hidden="true"
+            class="lucide lucide-pencil"
+            fill="none"
+            height="12"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+            width="12"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z"
+            />
+            <path
+              d="m15 5 4 4"
+            />
+          </svg>
+          <p
+            class="css-5tdwbq"
+          >
+            Editable by Maker
+          </p>
+        </div>
+        <div
+          class="chakra-stack css-141cw8v"
+        >
+          <svg
+            aria-hidden="true"
+            class="lucide lucide-lock"
+            fill="none"
+            height="12"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+            width="12"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect
+              height="11"
+              rx="2"
+              ry="2"
+              width="18"
+              x="3"
+              y="11"
+            />
+            <path
+              d="M7 11V7a5 5 0 0 1 10 0v4"
+            />
+          </svg>
+          <p
+            class="css-7lrzga"
+          >
+            System-managed / read-only
+          </p>
+        </div>
+      </div>
+    </div>
+    <div
+      class="css-wsjc4n"
+    >
+      <div>
+        <div
+          class="chakra-stack css-dh3r6g"
+        >
+          <p
+            class="css-1kuohir"
+          >
+            Customer Type
+          </p>
+          <svg
+            aria-hidden="true"
+            class="lucide lucide-pencil"
+            fill="none"
+            height="11"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+            width="11"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z"
+            />
+            <path
+              d="m15 5 4 4"
+            />
+          </svg>
+        </div>
+        <div
+          class="chakra-native-select__root css-1b77ry"
+        >
+          <select
+            class="chakra-native-select__field css-mc3auk"
+          >
+            <option
+              value="31 - Corporate Japanese"
+            >
+              31 - Corporate Japanese
+            </option>
+            <option
+              value="32 - Corporate Non Japanese"
+            >
+              32 - Corporate Non Japanese
+            </option>
+            <option
+              value="33 - Commercial"
+            >
+              33 - Commercial
+            </option>
+            <option
+              value="02 - Bank"
+            >
+              02 - Bank
+            </option>
+          </select>
+          <div
+            class="chakra-native-select__indicator css-hydxzs"
+          >
+            <svg
+              class="css-s3mb0o"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="m6 9 6 6 6-6"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div
+          class="chakra-stack css-dh3r6g"
+        >
+          <p
+            class="css-12lewfz"
+          >
+            Checklist Status
+          </p>
+          <svg
+            aria-hidden="true"
+            class="lucide lucide-lock"
+            fill="none"
+            height="11"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+            width="11"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect
+              height="11"
+              rx="2"
+              ry="2"
+              width="18"
+              x="3"
+              y="11"
+            />
+            <path
+              d="M7 11V7a5 5 0 0 1 10 0v4"
+            />
+          </svg>
+        </div>
+        <input
+          class="chakra-input css-1ragpyb"
+          readonly=""
+          type="text"
+          value="Pending"
+        />
+      </div>
+      <div>
+        <div
+          class="chakra-stack css-dh3r6g"
+        >
+          <p
+            class="css-12lewfz"
+          >
+            Checklist Stage
+          </p>
+          <svg
+            aria-hidden="true"
+            class="lucide lucide-lock"
+            fill="none"
+            height="11"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+            width="11"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect
+              height="11"
+              rx="2"
+              ry="2"
+              width="18"
+              x="3"
+              y="11"
+            />
+            <path
+              d="M7 11V7a5 5 0 0 1 10 0v4"
+            />
+          </svg>
+        </div>
+        <input
+          class="chakra-input css-1ragpyb"
+          readonly=""
+          type="text"
+          value="KYCprogress"
+        />
+      </div>
+    </div>
+    <h2
+      class="chakra-heading css-egmvld"
+    >
+      Basic Information
+    </h2>
+    <div
+      class="css-149wrgx"
+    >
+      <div>
+        <div
+          class="chakra-stack css-dh3r6g"
+        >
+          <p
+            class="css-12lewfz"
+          >
+            CAP ID
+          </p>
+          <svg
+            aria-hidden="true"
+            class="lucide lucide-lock"
+            fill="none"
+            height="11"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+            width="11"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect
+              height="11"
+              rx="2"
+              ry="2"
+              width="18"
+              x="3"
+              y="11"
+            />
+            <path
+              d="M7 11V7a5 5 0 0 1 10 0v4"
+            />
+          </svg>
+        </div>
+        <input
+          class="chakra-input css-1ragpyb"
+          readonly=""
+          type="text"
+          value="CAP-2024-001"
+        />
+      </div>
+      <div>
+        <div
+          class="chakra-stack css-dh3r6g"
+        >
+          <p
+            class="css-12lewfz"
+          >
+            BES Reference No.
+          </p>
+          <svg
+            aria-hidden="true"
+            class="lucide lucide-lock"
+            fill="none"
+            height="11"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+            width="11"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect
+              height="11"
+              rx="2"
+              ry="2"
+              width="18"
+              x="3"
+              y="11"
+            />
+            <path
+              d="M7 11V7a5 5 0 0 1 10 0v4"
+            />
+          </svg>
+        </div>
+        <input
+          class="chakra-input css-1ragpyb"
+          readonly=""
+          type="text"
+          value="BES-998877"
+        />
+      </div>
+      <div>
+        <div
+          class="chakra-stack css-dh3r6g"
+        >
+          <p
+            class="css-12lewfz"
+          >
+            CIF No.
+          </p>
+          <svg
+            aria-hidden="true"
+            class="lucide lucide-lock"
+            fill="none"
+            height="11"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+            width="11"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect
+              height="11"
+              rx="2"
+              ry="2"
+              width="18"
+              x="3"
+              y="11"
+            />
+            <path
+              d="M7 11V7a5 5 0 0 1 10 0v4"
+            />
+          </svg>
+        </div>
+        <input
+          class="chakra-input css-1ragpyb"
+          readonly=""
+          type="text"
+          value="CIF12345678"
+        />
+      </div>
+      <div>
+        <div
+          class="chakra-stack css-dh3r6g"
+        >
+          <p
+            class="css-1crtl0q"
+          >
+            *
+          </p>
+          <p
+            class="css-1kuohir"
+          >
+            Customer Name
+          </p>
+          <svg
+            aria-hidden="true"
+            class="lucide lucide-pencil"
+            fill="none"
+            height="11"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+            width="11"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z"
+            />
+            <path
+              d="m15 5 4 4"
+            />
+          </svg>
+        </div>
+        <input
+          class="chakra-input css-5jedro"
+          type="text"
+          value="SUZUKI MOTOR CORPORATION"
+        />
+      </div>
+      <div>
+        <div
+          class="chakra-stack css-dh3r6g"
+        >
+          <p
+            class="css-1kuohir"
+          >
+            Formerly Known As
+          </p>
+          <svg
+            aria-hidden="true"
+            class="lucide lucide-pencil"
+            fill="none"
+            height="11"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+            width="11"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z"
+            />
+            <path
+              d="m15 5 4 4"
+            />
+          </svg>
+        </div>
+        <input
+          class="chakra-input css-5jedro"
+          type="text"
+          value="-"
+        />
+      </div>
+      <div>
+        <div
+          class="chakra-stack css-dh3r6g"
+        >
+          <p
+            class="css-1kuohir"
+          >
+            Business Name/Also Known As
+          </p>
+          <svg
+            aria-hidden="true"
+            class="lucide lucide-pencil"
+            fill="none"
+            height="11"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+            width="11"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z"
+            />
+            <path
+              d="m15 5 4 4"
+            />
+          </svg>
+        </div>
+        <input
+          class="chakra-input css-5jedro"
+          type="text"
+          value="SUZUKI MOTOR"
+        />
+      </div>
+      <div>
+        <div
+          class="chakra-stack css-dh3r6g"
+        >
+          <p
+            class="css-1kuohir"
+          >
+            Date of Establishment
+          </p>
+          <svg
+            aria-hidden="true"
+            class="lucide lucide-pencil"
+            fill="none"
+            height="11"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+            width="11"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z"
+            />
+            <path
+              d="m15 5 4 4"
+            />
+          </svg>
+        </div>
+        <input
+          class="chakra-input css-5jedro"
+          type="date"
+          value="1920-03-15"
+        />
+      </div>
+      <div>
+        <div
+          class="chakra-stack css-dh3r6g"
+        >
+          <p
+            class="css-1crtl0q"
+          >
+            *
+          </p>
+          <p
+            class="css-1kuohir"
+          >
+            Legal Entity Type
+          </p>
+          <svg
+            aria-hidden="true"
+            class="lucide lucide-pencil"
+            fill="none"
+            height="11"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+            width="11"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z"
+            />
+            <path
+              d="m15 5 4 4"
+            />
+          </svg>
+        </div>
+        <div
+          class="chakra-native-select__root css-1b77ry"
+        >
+          <select
+            class="chakra-native-select__field css-mc3auk"
+          >
+            <option
+              value="PERUSAHAAN TERBATAS - LIMITED LIABILITY COMPANY"
+            >
+              PERUSAHAAN TERBATAS - LIMITED LIABILITY COMPANY
+            </option>
+            <option
+              value="CV/PERSEKUTUAN KOMANDITER - PARTNERSHIP"
+            >
+              CV/PERSEKUTUAN KOMANDITER - PARTNERSHIP
+            </option>
+            <option
+              value="YAYASAN - FOUNDATION"
+            >
+              YAYASAN - FOUNDATION
+            </option>
+            <option
+              value="KOPERASI - COOPERATIVE"
+            >
+              KOPERASI - COOPERATIVE
+            </option>
+            <option
+              value="KEMENTRIAN NEGARA/LEMBAGA/SATUAN KERJA/LEMBAGA PEMERINTAHAN - MINISTRY OF STATE/AGENCY/WORK UNIT/GOVERNMENT INSTITUTION"
+            >
+              KEMENTRIAN NEGARA/LEMBAGA/SATUAN KERJA/LEMBAGA PEMERINTAHAN - MINISTRY OF STATE/AGENCY/WORK UNIT/GOVERNMENT INSTITUTION
+            </option>
+            <option
+              value="LAINNYA - OTHERS"
+            >
+              LAINNYA - OTHERS
+            </option>
+            <option
+              value="PERUSAHAAN PERORANGAN - INDIVIDUAL COMPANY"
+            >
+              PERUSAHAAN PERORANGAN - INDIVIDUAL COMPANY
+            </option>
+            <option
+              value="PERUSAHAAN ASING - FOREIGN COMPANY"
+            >
+              PERUSAHAAN ASING - FOREIGN COMPANY
+            </option>
+            <option
+              value="KANTOR PERWAKILAN PERUSAHAAN ASING - REPRESENTATIVE OFFICE"
+            >
+              KANTOR PERWAKILAN PERUSAHAAN ASING - REPRESENTATIVE OFFICE
+            </option>
+            <option
+              value="PERKUMPULAN - COMMUNITY"
+            >
+              PERKUMPULAN - COMMUNITY
+            </option>
+            <option
+              value="REKSADANA - MUTUAL FUND"
+            >
+              REKSADANA - MUTUAL FUND
+            </option>
+            <option
+              value="DANA PENSIUN - PENSION FUND"
+            >
+              DANA PENSIUN - PENSION FUND
+            </option>
+            <option
+              value="LEMBAGA INTERNASIONAL/PERWAKILAN ASING - INTERNATIONAL INSTITUTION/FOREIGN REPRESENTATIVE"
+            >
+              LEMBAGA INTERNASIONAL/PERWAKILAN ASING - INTERNATIONAL INSTITUTION/FOREIGN REPRESENTATIVE
+            </option>
+            <option
+              value="PERIKATAN LAINNYA - LEGAL ARRANGEMENT"
+            >
+              PERIKATAN LAINNYA - LEGAL ARRANGEMENT
+            </option>
+          </select>
+          <div
+            class="chakra-native-select__indicator css-hydxzs"
+          >
+            <svg
+              class="css-s3mb0o"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="m6 9 6 6 6-6"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div
+          class="chakra-stack css-dh3r6g"
+        >
+          <p
+            class="css-1crtl0q"
+          >
+            *
+          </p>
+          <p
+            class="css-1kuohir"
+          >
+            Legal Entity Characteristic
+          </p>
+          <svg
+            aria-hidden="true"
+            class="lucide lucide-pencil"
+            fill="none"
+            height="11"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+            width="11"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z"
+            />
+            <path
+              d="m15 5 4 4"
+            />
+          </svg>
+        </div>
+        <div
+          class="chakra-native-select__root css-1b77ry"
+        >
+          <select
+            class="chakra-native-select__field css-mc3auk"
+          >
+            <option
+              value="Publicly Listed"
+            >
+              Publicly Listed
+            </option>
+            <option
+              value="Privately Held"
+            >
+              Privately Held
+            </option>
+            <option
+              value="Government Owned"
+            >
+              Government Owned
+            </option>
+            <option
+              value="State Owned Enterprise"
+            >
+              State Owned Enterprise
+            </option>
+          </select>
+          <div
+            class="chakra-native-select__indicator css-hydxzs"
+          >
+            <svg
+              class="css-s3mb0o"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="m6 9 6 6 6-6"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div
+          class="chakra-stack css-dh3r6g"
+        >
+          <p
+            class="css-1crtl0q"
+          >
+            *
+          </p>
+          <p
+            class="css-1kuohir"
+          >
+            Line of business
+          </p>
+          <svg
+            aria-hidden="true"
+            class="lucide lucide-pencil"
+            fill="none"
+            height="11"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+            width="11"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z"
+            />
+            <path
+              d="m15 5 4 4"
+            />
+          </svg>
+        </div>
+        <div
+          class="chakra-native-select__root css-1b77ry"
+        >
+          <select
+            class="chakra-native-select__field css-mc3auk"
+          >
+            <option
+              value="Automotive Manufacturing"
+            >
+              Automotive Manufacturing
+            </option>
+            <option
+              value="Financial Services"
+            >
+              Financial Services
+            </option>
+            <option
+              value="Technology"
+            >
+              Technology
+            </option>
+            <option
+              value="Healthcare"
+            >
+              Healthcare
+            </option>
+            <option
+              value="Real Estate"
+            >
+              Real Estate
+            </option>
+            <option
+              value="Energy"
+            >
+              Energy
+            </option>
+            <option
+              value="Retail"
+            >
+              Retail
+            </option>
+            <option
+              value="Transportation"
+            >
+              Transportation
+            </option>
+          </select>
+          <div
+            class="chakra-native-select__indicator css-hydxzs"
+          >
+            <svg
+              class="css-s3mb0o"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="m6 9 6 6 6-6"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div
+          class="chakra-stack css-dh3r6g"
+        >
+          <p
+            class="css-1crtl0q"
+          >
+            *
+          </p>
+          <p
+            class="css-1kuohir"
+          >
+            Register Address (Country)
+          </p>
+          <svg
+            aria-hidden="true"
+            class="lucide lucide-pencil"
+            fill="none"
+            height="11"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+            width="11"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z"
+            />
+            <path
+              d="m15 5 4 4"
+            />
+          </svg>
+        </div>
+        <div
+          class="chakra-combobox__root css-1oswll3"
+          data-part="root"
+          data-scope="combobox"
+          dir="ltr"
+          id="combobox:_r_c_"
+        >
+          <div
+            class="chakra-combobox__control css-16zir93"
+            data-part="control"
+            data-scope="combobox"
+            data-state="closed"
+            dir="ltr"
+            id="combobox:_r_c_:control"
+          >
+            <input
+              aria-autocomplete="list"
+              aria-controls="combobox:_r_c_:content"
+              aria-expanded="false"
+              autocapitalize="none"
+              autocomplete="off"
+              autocorrect="off"
+              class="chakra-combobox__input css-f77nkl"
+              data-part="input"
+              data-scope="combobox"
+              data-state="closed"
+              dir="ltr"
+              id="combobox:_r_c_:input"
+              placeholder="Search..."
+              role="combobox"
+              spellcheck="false"
+              type="text"
+              value="Japan"
+            />
+            <button
+              aria-expanded="false"
+              aria-haspopup="listbox"
+              aria-label="Toggle suggestions"
+              class="chakra-combobox__trigger css-1t9arez"
+              data-part="trigger"
+              data-scope="combobox"
+              data-state="closed"
+              dir="ltr"
+              id="combobox:_r_c_:toggle-btn"
+              tabindex="-1"
+              type="button"
+            >
+              <svg
+                aria-hidden="true"
+                class="lucide lucide-chevrons-up-down"
+                fill="none"
+                height="14"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                width="14"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="m7 15 5 5 5-5"
+                />
+                <path
+                  d="m7 9 5-5 5 5"
+                />
+              </svg>
+            </button>
+          </div>
+          <div
+            class="chakra-combobox__positioner"
+            data-part="positioner"
+            data-scope="combobox"
+            dir="ltr"
+            id="combobox:_r_c_:popper"
+            style="position: absolute; isolation: isolate; pointer-events: none; top: 0px; left: 0px; transform: translate3d(0, -100vh, 0); z-index: var(--z-index);"
+          >
+            <div
+              aria-labelledby="combobox:_r_c_:label"
+              class="chakra-combobox__content css-ug570"
+              data-part="content"
+              data-scope="combobox"
+              data-state="closed"
+              dir="ltr"
+              hidden=""
+              id="combobox:_r_c_:content"
+              role="listbox"
+              tabindex="-1"
+            >
+              <div
+                aria-selected="true"
+                class="chakra-combobox__item css-ib6kub"
+                data-part="item"
+                data-scope="combobox"
+                data-state="checked"
+                data-value="Japan"
+                dir="ltr"
+                id="combobox:_r_c_:option:Japan"
+                role="option"
+                tabindex="-1"
+              >
+                <span
+                  class="chakra-combobox__itemText css-apustk"
+                  data-part="item-text"
+                  data-scope="combobox"
+                  data-state="checked"
+                  dir="ltr"
+                >
+                  Japan
+                </span>
+                <div
+                  aria-hidden="true"
+                  class="chakra-combobox__itemIndicator css-1it38y5"
+                  data-part="item-indicator"
+                  data-scope="combobox"
+                  data-state="checked"
+                  dir="ltr"
+                >
+                  ✓
+                </div>
+              </div>
+              <div
+                class="chakra-combobox__item css-ib6kub"
+                data-part="item"
+                data-scope="combobox"
+                data-state="unchecked"
+                data-value="Indonesia"
+                dir="ltr"
+                id="combobox:_r_c_:option:Indonesia"
+                role="option"
+                tabindex="-1"
+              >
+                <span
+                  class="chakra-combobox__itemText css-apustk"
+                  data-part="item-text"
+                  data-scope="combobox"
+                  data-state="unchecked"
+                  dir="ltr"
+                >
+                  Indonesia
+                </span>
+                <div
+                  aria-hidden="true"
+                  class="chakra-combobox__itemIndicator css-1it38y5"
+                  data-part="item-indicator"
+                  data-scope="combobox"
+                  data-state="unchecked"
+                  dir="ltr"
+                  hidden=""
+                >
+                  ✓
+                </div>
+              </div>
+              <div
+                class="chakra-combobox__item css-ib6kub"
+                data-part="item"
+                data-scope="combobox"
+                data-state="unchecked"
+                data-value="Singapore"
+                dir="ltr"
+                id="combobox:_r_c_:option:Singapore"
+                role="option"
+                tabindex="-1"
+              >
+                <span
+                  class="chakra-combobox__itemText css-apustk"
+                  data-part="item-text"
+                  data-scope="combobox"
+                  data-state="unchecked"
+                  dir="ltr"
+                >
+                  Singapore
+                </span>
+                <div
+                  aria-hidden="true"
+                  class="chakra-combobox__itemIndicator css-1it38y5"
+                  data-part="item-indicator"
+                  data-scope="combobox"
+                  data-state="unchecked"
+                  dir="ltr"
+                  hidden=""
+                >
+                  ✓
+                </div>
+              </div>
+              <div
+                class="chakra-combobox__item css-ib6kub"
+                data-part="item"
+                data-scope="combobox"
+                data-state="unchecked"
+                data-value="Malaysia"
+                dir="ltr"
+                id="combobox:_r_c_:option:Malaysia"
+                role="option"
+                tabindex="-1"
+              >
+                <span
+                  class="chakra-combobox__itemText css-apustk"
+                  data-part="item-text"
+                  data-scope="combobox"
+                  data-state="unchecked"
+                  dir="ltr"
+                >
+                  Malaysia
+                </span>
+                <div
+                  aria-hidden="true"
+                  class="chakra-combobox__itemIndicator css-1it38y5"
+                  data-part="item-indicator"
+                  data-scope="combobox"
+                  data-state="unchecked"
+                  dir="ltr"
+                  hidden=""
+                >
+                  ✓
+                </div>
+              </div>
+              <div
+                class="chakra-combobox__item css-ib6kub"
+                data-part="item"
+                data-scope="combobox"
+                data-state="unchecked"
+                data-value="Thailand"
+                dir="ltr"
+                id="combobox:_r_c_:option:Thailand"
+                role="option"
+                tabindex="-1"
+              >
+                <span
+                  class="chakra-combobox__itemText css-apustk"
+                  data-part="item-text"
+                  data-scope="combobox"
+                  data-state="unchecked"
+                  dir="ltr"
+                >
+                  Thailand
+                </span>
+                <div
+                  aria-hidden="true"
+                  class="chakra-combobox__itemIndicator css-1it38y5"
+                  data-part="item-indicator"
+                  data-scope="combobox"
+                  data-state="unchecked"
+                  dir="ltr"
+                  hidden=""
+                >
+                  ✓
+                </div>
+              </div>
+              <div
+                class="chakra-combobox__item css-ib6kub"
+                data-part="item"
+                data-scope="combobox"
+                data-state="unchecked"
+                data-value="Philippines"
+                dir="ltr"
+                id="combobox:_r_c_:option:Philippines"
+                role="option"
+                tabindex="-1"
+              >
+                <span
+                  class="chakra-combobox__itemText css-apustk"
+                  data-part="item-text"
+                  data-scope="combobox"
+                  data-state="unchecked"
+                  dir="ltr"
+                >
+                  Philippines
+                </span>
+                <div
+                  aria-hidden="true"
+                  class="chakra-combobox__itemIndicator css-1it38y5"
+                  data-part="item-indicator"
+                  data-scope="combobox"
+                  data-state="unchecked"
+                  dir="ltr"
+                  hidden=""
+                >
+                  ✓
+                </div>
+              </div>
+              <div
+                class="chakra-combobox__item css-ib6kub"
+                data-part="item"
+                data-scope="combobox"
+                data-state="unchecked"
+                data-value="Vietnam"
+                dir="ltr"
+                id="combobox:_r_c_:option:Vietnam"
+                role="option"
+                tabindex="-1"
+              >
+                <span
+                  class="chakra-combobox__itemText css-apustk"
+                  data-part="item-text"
+                  data-scope="combobox"
+                  data-state="unchecked"
+                  dir="ltr"
+                >
+                  Vietnam
+                </span>
+                <div
+                  aria-hidden="true"
+                  class="chakra-combobox__itemIndicator css-1it38y5"
+                  data-part="item-indicator"
+                  data-scope="combobox"
+                  data-state="unchecked"
+                  dir="ltr"
+                  hidden=""
+                >
+                  ✓
+                </div>
+              </div>
+              <div
+                class="chakra-combobox__item css-ib6kub"
+                data-part="item"
+                data-scope="combobox"
+                data-state="unchecked"
+                data-value="United States"
+                dir="ltr"
+                id="combobox:_r_c_:option:United States"
+                role="option"
+                tabindex="-1"
+              >
+                <span
+                  class="chakra-combobox__itemText css-apustk"
+                  data-part="item-text"
+                  data-scope="combobox"
+                  data-state="unchecked"
+                  dir="ltr"
+                >
+                  United States
+                </span>
+                <div
+                  aria-hidden="true"
+                  class="chakra-combobox__itemIndicator css-1it38y5"
+                  data-part="item-indicator"
+                  data-scope="combobox"
+                  data-state="unchecked"
+                  dir="ltr"
+                  hidden=""
+                >
+                  ✓
+                </div>
+              </div>
+              <div
+                class="chakra-combobox__item css-ib6kub"
+                data-part="item"
+                data-scope="combobox"
+                data-state="unchecked"
+                data-value="United Kingdom"
+                dir="ltr"
+                id="combobox:_r_c_:option:United Kingdom"
+                role="option"
+                tabindex="-1"
+              >
+                <span
+                  class="chakra-combobox__itemText css-apustk"
+                  data-part="item-text"
+                  data-scope="combobox"
+                  data-state="unchecked"
+                  dir="ltr"
+                >
+                  United Kingdom
+                </span>
+                <div
+                  aria-hidden="true"
+                  class="chakra-combobox__itemIndicator css-1it38y5"
+                  data-part="item-indicator"
+                  data-scope="combobox"
+                  data-state="unchecked"
+                  dir="ltr"
+                  hidden=""
+                >
+                  ✓
+                </div>
+              </div>
+              <div
+                class="chakra-combobox__item css-ib6kub"
+                data-part="item"
+                data-scope="combobox"
+                data-state="unchecked"
+                data-value="China"
+                dir="ltr"
+                id="combobox:_r_c_:option:China"
+                role="option"
+                tabindex="-1"
+              >
+                <span
+                  class="chakra-combobox__itemText css-apustk"
+                  data-part="item-text"
+                  data-scope="combobox"
+                  data-state="unchecked"
+                  dir="ltr"
+                >
+                  China
+                </span>
+                <div
+                  aria-hidden="true"
+                  class="chakra-combobox__itemIndicator css-1it38y5"
+                  data-part="item-indicator"
+                  data-scope="combobox"
+                  data-state="unchecked"
+                  dir="ltr"
+                  hidden=""
+                >
+                  ✓
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div
+          class="chakra-stack css-dh3r6g"
+        >
+          <p
+            class="css-1crtl0q"
+          >
+            *
+          </p>
+          <p
+            class="css-1kuohir"
+          >
+            Correspondence Address (Country)
+          </p>
+          <svg
+            aria-hidden="true"
+            class="lucide lucide-pencil"
+            fill="none"
+            height="11"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+            width="11"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z"
+            />
+            <path
+              d="m15 5 4 4"
+            />
+          </svg>
+        </div>
+        <div
+          class="chakra-combobox__root css-1oswll3"
+          data-part="root"
+          data-scope="combobox"
+          dir="ltr"
+          id="combobox:_r_d_"
+        >
+          <div
+            class="chakra-combobox__control css-16zir93"
+            data-part="control"
+            data-scope="combobox"
+            data-state="closed"
+            dir="ltr"
+            id="combobox:_r_d_:control"
+          >
+            <input
+              aria-autocomplete="list"
+              aria-controls="combobox:_r_d_:content"
+              aria-expanded="false"
+              autocapitalize="none"
+              autocomplete="off"
+              autocorrect="off"
+              class="chakra-combobox__input css-f77nkl"
+              data-part="input"
+              data-scope="combobox"
+              data-state="closed"
+              dir="ltr"
+              id="combobox:_r_d_:input"
+              placeholder="Search..."
+              role="combobox"
+              spellcheck="false"
+              type="text"
+              value="Japan"
+            />
+            <button
+              aria-expanded="false"
+              aria-haspopup="listbox"
+              aria-label="Toggle suggestions"
+              class="chakra-combobox__trigger css-1t9arez"
+              data-part="trigger"
+              data-scope="combobox"
+              data-state="closed"
+              dir="ltr"
+              id="combobox:_r_d_:toggle-btn"
+              tabindex="-1"
+              type="button"
+            >
+              <svg
+                aria-hidden="true"
+                class="lucide lucide-chevrons-up-down"
+                fill="none"
+                height="14"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                width="14"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="m7 15 5 5 5-5"
+                />
+                <path
+                  d="m7 9 5-5 5 5"
+                />
+              </svg>
+            </button>
+          </div>
+          <div
+            class="chakra-combobox__positioner"
+            data-part="positioner"
+            data-scope="combobox"
+            dir="ltr"
+            id="combobox:_r_d_:popper"
+            style="position: absolute; isolation: isolate; pointer-events: none; top: 0px; left: 0px; transform: translate3d(0, -100vh, 0); z-index: var(--z-index);"
+          >
+            <div
+              aria-labelledby="combobox:_r_d_:label"
+              class="chakra-combobox__content css-ug570"
+              data-part="content"
+              data-scope="combobox"
+              data-state="closed"
+              dir="ltr"
+              hidden=""
+              id="combobox:_r_d_:content"
+              role="listbox"
+              tabindex="-1"
+            >
+              <div
+                aria-selected="true"
+                class="chakra-combobox__item css-ib6kub"
+                data-part="item"
+                data-scope="combobox"
+                data-state="checked"
+                data-value="Japan"
+                dir="ltr"
+                id="combobox:_r_d_:option:Japan"
+                role="option"
+                tabindex="-1"
+              >
+                <span
+                  class="chakra-combobox__itemText css-apustk"
+                  data-part="item-text"
+                  data-scope="combobox"
+                  data-state="checked"
+                  dir="ltr"
+                >
+                  Japan
+                </span>
+                <div
+                  aria-hidden="true"
+                  class="chakra-combobox__itemIndicator css-1it38y5"
+                  data-part="item-indicator"
+                  data-scope="combobox"
+                  data-state="checked"
+                  dir="ltr"
+                >
+                  ✓
+                </div>
+              </div>
+              <div
+                class="chakra-combobox__item css-ib6kub"
+                data-part="item"
+                data-scope="combobox"
+                data-state="unchecked"
+                data-value="Indonesia"
+                dir="ltr"
+                id="combobox:_r_d_:option:Indonesia"
+                role="option"
+                tabindex="-1"
+              >
+                <span
+                  class="chakra-combobox__itemText css-apustk"
+                  data-part="item-text"
+                  data-scope="combobox"
+                  data-state="unchecked"
+                  dir="ltr"
+                >
+                  Indonesia
+                </span>
+                <div
+                  aria-hidden="true"
+                  class="chakra-combobox__itemIndicator css-1it38y5"
+                  data-part="item-indicator"
+                  data-scope="combobox"
+                  data-state="unchecked"
+                  dir="ltr"
+                  hidden=""
+                >
+                  ✓
+                </div>
+              </div>
+              <div
+                class="chakra-combobox__item css-ib6kub"
+                data-part="item"
+                data-scope="combobox"
+                data-state="unchecked"
+                data-value="Singapore"
+                dir="ltr"
+                id="combobox:_r_d_:option:Singapore"
+                role="option"
+                tabindex="-1"
+              >
+                <span
+                  class="chakra-combobox__itemText css-apustk"
+                  data-part="item-text"
+                  data-scope="combobox"
+                  data-state="unchecked"
+                  dir="ltr"
+                >
+                  Singapore
+                </span>
+                <div
+                  aria-hidden="true"
+                  class="chakra-combobox__itemIndicator css-1it38y5"
+                  data-part="item-indicator"
+                  data-scope="combobox"
+                  data-state="unchecked"
+                  dir="ltr"
+                  hidden=""
+                >
+                  ✓
+                </div>
+              </div>
+              <div
+                class="chakra-combobox__item css-ib6kub"
+                data-part="item"
+                data-scope="combobox"
+                data-state="unchecked"
+                data-value="Malaysia"
+                dir="ltr"
+                id="combobox:_r_d_:option:Malaysia"
+                role="option"
+                tabindex="-1"
+              >
+                <span
+                  class="chakra-combobox__itemText css-apustk"
+                  data-part="item-text"
+                  data-scope="combobox"
+                  data-state="unchecked"
+                  dir="ltr"
+                >
+                  Malaysia
+                </span>
+                <div
+                  aria-hidden="true"
+                  class="chakra-combobox__itemIndicator css-1it38y5"
+                  data-part="item-indicator"
+                  data-scope="combobox"
+                  data-state="unchecked"
+                  dir="ltr"
+                  hidden=""
+                >
+                  ✓
+                </div>
+              </div>
+              <div
+                class="chakra-combobox__item css-ib6kub"
+                data-part="item"
+                data-scope="combobox"
+                data-state="unchecked"
+                data-value="Thailand"
+                dir="ltr"
+                id="combobox:_r_d_:option:Thailand"
+                role="option"
+                tabindex="-1"
+              >
+                <span
+                  class="chakra-combobox__itemText css-apustk"
+                  data-part="item-text"
+                  data-scope="combobox"
+                  data-state="unchecked"
+                  dir="ltr"
+                >
+                  Thailand
+                </span>
+                <div
+                  aria-hidden="true"
+                  class="chakra-combobox__itemIndicator css-1it38y5"
+                  data-part="item-indicator"
+                  data-scope="combobox"
+                  data-state="unchecked"
+                  dir="ltr"
+                  hidden=""
+                >
+                  ✓
+                </div>
+              </div>
+              <div
+                class="chakra-combobox__item css-ib6kub"
+                data-part="item"
+                data-scope="combobox"
+                data-state="unchecked"
+                data-value="Philippines"
+                dir="ltr"
+                id="combobox:_r_d_:option:Philippines"
+                role="option"
+                tabindex="-1"
+              >
+                <span
+                  class="chakra-combobox__itemText css-apustk"
+                  data-part="item-text"
+                  data-scope="combobox"
+                  data-state="unchecked"
+                  dir="ltr"
+                >
+                  Philippines
+                </span>
+                <div
+                  aria-hidden="true"
+                  class="chakra-combobox__itemIndicator css-1it38y5"
+                  data-part="item-indicator"
+                  data-scope="combobox"
+                  data-state="unchecked"
+                  dir="ltr"
+                  hidden=""
+                >
+                  ✓
+                </div>
+              </div>
+              <div
+                class="chakra-combobox__item css-ib6kub"
+                data-part="item"
+                data-scope="combobox"
+                data-state="unchecked"
+                data-value="Vietnam"
+                dir="ltr"
+                id="combobox:_r_d_:option:Vietnam"
+                role="option"
+                tabindex="-1"
+              >
+                <span
+                  class="chakra-combobox__itemText css-apustk"
+                  data-part="item-text"
+                  data-scope="combobox"
+                  data-state="unchecked"
+                  dir="ltr"
+                >
+                  Vietnam
+                </span>
+                <div
+                  aria-hidden="true"
+                  class="chakra-combobox__itemIndicator css-1it38y5"
+                  data-part="item-indicator"
+                  data-scope="combobox"
+                  data-state="unchecked"
+                  dir="ltr"
+                  hidden=""
+                >
+                  ✓
+                </div>
+              </div>
+              <div
+                class="chakra-combobox__item css-ib6kub"
+                data-part="item"
+                data-scope="combobox"
+                data-state="unchecked"
+                data-value="United States"
+                dir="ltr"
+                id="combobox:_r_d_:option:United States"
+                role="option"
+                tabindex="-1"
+              >
+                <span
+                  class="chakra-combobox__itemText css-apustk"
+                  data-part="item-text"
+                  data-scope="combobox"
+                  data-state="unchecked"
+                  dir="ltr"
+                >
+                  United States
+                </span>
+                <div
+                  aria-hidden="true"
+                  class="chakra-combobox__itemIndicator css-1it38y5"
+                  data-part="item-indicator"
+                  data-scope="combobox"
+                  data-state="unchecked"
+                  dir="ltr"
+                  hidden=""
+                >
+                  ✓
+                </div>
+              </div>
+              <div
+                class="chakra-combobox__item css-ib6kub"
+                data-part="item"
+                data-scope="combobox"
+                data-state="unchecked"
+                data-value="United Kingdom"
+                dir="ltr"
+                id="combobox:_r_d_:option:United Kingdom"
+                role="option"
+                tabindex="-1"
+              >
+                <span
+                  class="chakra-combobox__itemText css-apustk"
+                  data-part="item-text"
+                  data-scope="combobox"
+                  data-state="unchecked"
+                  dir="ltr"
+                >
+                  United Kingdom
+                </span>
+                <div
+                  aria-hidden="true"
+                  class="chakra-combobox__itemIndicator css-1it38y5"
+                  data-part="item-indicator"
+                  data-scope="combobox"
+                  data-state="unchecked"
+                  dir="ltr"
+                  hidden=""
+                >
+                  ✓
+                </div>
+              </div>
+              <div
+                class="chakra-combobox__item css-ib6kub"
+                data-part="item"
+                data-scope="combobox"
+                data-state="unchecked"
+                data-value="China"
+                dir="ltr"
+                id="combobox:_r_d_:option:China"
+                role="option"
+                tabindex="-1"
+              >
+                <span
+                  class="chakra-combobox__itemText css-apustk"
+                  data-part="item-text"
+                  data-scope="combobox"
+                  data-state="unchecked"
+                  dir="ltr"
+                >
+                  China
+                </span>
+                <div
+                  aria-hidden="true"
+                  class="chakra-combobox__itemIndicator css-1it38y5"
+                  data-part="item-indicator"
+                  data-scope="combobox"
+                  data-state="unchecked"
+                  dir="ltr"
+                  hidden=""
+                >
+                  ✓
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div
+          class="chakra-stack css-dh3r6g"
+        >
+          <p
+            class="css-1crtl0q"
+          >
+            *
+          </p>
+          <p
+            class="css-1kuohir"
+          >
+            RM/RO Name
+          </p>
+          <svg
+            aria-hidden="true"
+            class="lucide lucide-pencil"
+            fill="none"
+            height="11"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+            width="11"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z"
+            />
+            <path
+              d="m15 5 4 4"
+            />
+          </svg>
+        </div>
+        <input
+          class="chakra-input css-5jedro"
+          type="text"
+          value="Ichiro Tanaka"
+        />
+      </div>
+      <div>
+        <div
+          class="chakra-stack css-dh3r6g"
+        >
+          <p
+            class="css-1crtl0q"
+          >
+            *
+          </p>
+          <p
+            class="css-1kuohir"
+          >
+            RM/RO Code
+          </p>
+          <svg
+            aria-hidden="true"
+            class="lucide lucide-pencil"
+            fill="none"
+            height="11"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+            width="11"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z"
+            />
+            <path
+              d="m15 5 4 4"
+            />
+          </svg>
+        </div>
+        <input
+          class="chakra-input css-5jedro"
+          type="text"
+          value="RM001"
+        />
+      </div>
+      <div>
+        <div
+          class="chakra-stack css-dh3r6g"
+        >
+          <p
+            class="css-1crtl0q"
+          >
+            *
+          </p>
+          <p
+            class="css-1kuohir"
+          >
+            Department
+          </p>
+          <svg
+            aria-hidden="true"
+            class="lucide lucide-pencil"
+            fill="none"
+            height="11"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+            width="11"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z"
+            />
+            <path
+              d="m15 5 4 4"
+            />
+          </svg>
+        </div>
+        <input
+          class="chakra-input css-5jedro"
+          type="text"
+          value="Corporate Banking"
+        />
+      </div>
+      <div>
+        <div
+          class="chakra-stack css-dh3r6g"
+        >
+          <p
+            class="css-12lewfz"
+          >
+            Final Risk Rating
+          </p>
+          <svg
+            aria-hidden="true"
+            class="lucide lucide-lock"
+            fill="none"
+            height="11"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+            width="11"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect
+              height="11"
+              rx="2"
+              ry="2"
+              width="18"
+              x="3"
+              y="11"
+            />
+            <path
+              d="M7 11V7a5 5 0 0 1 10 0v4"
+            />
+          </svg>
+        </div>
+        <input
+          class="chakra-input css-1ragpyb"
+          readonly=""
+          type="text"
+          value="---"
+        />
+      </div>
+      <div>
+        <div
+          class="chakra-stack css-dh3r6g"
+        >
+          <p
+            class="css-12lewfz"
+          >
+            Risk Score
+          </p>
+          <svg
+            aria-hidden="true"
+            class="lucide lucide-lock"
+            fill="none"
+            height="11"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+            width="11"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect
+              height="11"
+              rx="2"
+              ry="2"
+              width="18"
+              x="3"
+              y="11"
+            />
+            <path
+              d="M7 11V7a5 5 0 0 1 10 0v4"
+            />
+          </svg>
+        </div>
+        <input
+          class="chakra-input css-1ragpyb"
+          readonly=""
+          type="text"
+          value="---"
+        />
+      </div>
+      <div>
+        <div
+          class="chakra-stack css-dh3r6g"
+        >
+          <p
+            class="css-12lewfz"
+          >
+            Creation Date
+          </p>
+          <svg
+            aria-hidden="true"
+            class="lucide lucide-lock"
+            fill="none"
+            height="11"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+            width="11"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect
+              height="11"
+              rx="2"
+              ry="2"
+              width="18"
+              x="3"
+              y="11"
+            />
+            <path
+              d="M7 11V7a5 5 0 0 1 10 0v4"
+            />
+          </svg>
+        </div>
+        <input
+          class="chakra-input css-1ragpyb"
+          readonly=""
+          type="text"
+          value="2024-01-10"
+        />
+      </div>
+    </div>
+    <div
+      class="css-ohrnja"
+    >
+      <div>
+        <div
+          class="chakra-stack css-dh3r6g"
+        >
+          <p
+            class="css-12lewfz"
+          >
+            Approval Date
+          </p>
+          <svg
+            aria-hidden="true"
+            class="lucide lucide-lock"
+            fill="none"
+            height="11"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+            width="11"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect
+              height="11"
+              rx="2"
+              ry="2"
+              width="18"
+              x="3"
+              y="11"
+            />
+            <path
+              d="M7 11V7a5 5 0 0 1 10 0v4"
+            />
+          </svg>
+        </div>
+        <input
+          class="chakra-input css-1ragpyb"
+          readonly=""
+          type="text"
+          value="-"
+        />
+      </div>
+      <div />
+    </div>
+    <h2
+      class="chakra-heading css-egmvld"
+    >
+      Previous Checklist
+    </h2>
+    <div
+      class="css-ohrnja"
+    >
+      <div>
+        <div
+          class="chakra-stack css-dh3r6g"
+        >
+          <p
+            class="css-12lewfz"
+          >
+            Checklist ID
+          </p>
+          <svg
+            aria-hidden="true"
+            class="lucide lucide-lock"
+            fill="none"
+            height="11"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+            width="11"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect
+              height="11"
+              rx="2"
+              ry="2"
+              width="18"
+              x="3"
+              y="11"
+            />
+            <path
+              d="M7 11V7a5 5 0 0 1 10 0v4"
+            />
+          </svg>
+        </div>
+        <input
+          class="chakra-input css-1ragpyb"
+          readonly=""
+          type="text"
+          value="CHK-2024-0001"
+        />
+      </div>
+      <div>
+        <div
+          class="chakra-stack css-dh3r6g"
+        >
+          <p
+            class="css-12lewfz"
+          >
+            Risk Rating
+          </p>
+          <svg
+            aria-hidden="true"
+            class="lucide lucide-lock"
+            fill="none"
+            height="11"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+            width="11"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect
+              height="11"
+              rx="2"
+              ry="2"
+              width="18"
+              x="3"
+              y="11"
+            />
+            <path
+              d="M7 11V7a5 5 0 0 1 10 0v4"
+            />
+          </svg>
+        </div>
+        <input
+          class="chakra-input css-1ragpyb"
+          readonly=""
+          type="text"
+          value="Low"
+        />
+      </div>
+      <div>
+        <div
+          class="chakra-stack css-dh3r6g"
+        >
+          <p
+            class="css-12lewfz"
+          >
+            Next Review Due Date
+          </p>
+          <svg
+            aria-hidden="true"
+            class="lucide lucide-lock"
+            fill="none"
+            height="11"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+            width="11"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect
+              height="11"
+              rx="2"
+              ry="2"
+              width="18"
+              x="3"
+              y="11"
+            />
+            <path
+              d="M7 11V7a5 5 0 0 1 10 0v4"
+            />
+          </svg>
+        </div>
+        <input
+          class="chakra-input css-1ragpyb"
+          readonly=""
+          type="text"
+          value="2025-01-10"
+        />
+      </div>
+      <div>
+        <div
+          class="chakra-stack css-dh3r6g"
+        >
+          <p
+            class="css-12lewfz"
+          >
+            Reviewed To
+          </p>
+          <svg
+            aria-hidden="true"
+            class="lucide lucide-lock"
+            fill="none"
+            height="11"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+            width="11"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect
+              height="11"
+              rx="2"
+              ry="2"
+              width="18"
+              x="3"
+              y="11"
+            />
+            <path
+              d="M7 11V7a5 5 0 0 1 10 0v4"
+            />
+          </svg>
+        </div>
+        <input
+          class="chakra-input css-1ragpyb"
+          readonly=""
+          type="text"
+          value="---"
+        />
+      </div>
+    </div>
+    <div
+      class="css-eoiiov"
+    >
+      <div
+        class="chakra-stack css-wolr15"
+      >
+        <p
+          class="css-hm1e8g"
+        >
+          *
+        </p>
+        <p
+          class="css-1nisaub"
+        >
+          General checking to prohibit the establishment of banking relationship with non acceptable customers:
+        </p>
+      </div>
+      <p
+        class="css-10eq079"
+      >
+        Please select at least 1 option.
+      </p>
+      <div
+        class="chakra-stack css-ixctr8"
+      >
+        <label
+          class="chakra-checkbox__root css-1v6lsq6"
+          data-part="root"
+          data-scope="checkbox"
+          data-state="unchecked"
+          dir="ltr"
+          for="checkbox:_r_6_:input"
+          id="checkbox:_r_6_"
+        >
+          <input
+            aria-invalid="false"
+            aria-labelledby="checkbox:_r_6_:label"
+            id="checkbox:_r_6_:input"
+            style="border: 0px; height: 1px; margin: -1px; overflow: hidden; padding: 0px; position: absolute; width: 1px; white-space: nowrap; word-wrap: normal;"
+            type="checkbox"
+            value="on"
+          />
+          <div
+            aria-hidden="true"
+            class="chakra-checkbox__control css-h9ay06"
+            data-part="control"
+            data-scope="checkbox"
+            data-state="unchecked"
+            dir="ltr"
+            id="checkbox:_r_6_:control"
+          >
+            <svg
+              class="css-wuqtn7"
+              data-state="unchecked"
+              viewBox="0 0 24 24"
+            />
+          </div>
+          <span
+            class="chakra-checkbox__label css-1td7ckk"
+            data-part="label"
+            data-scope="checkbox"
+            data-state="unchecked"
+            dir="ltr"
+            id="checkbox:_r_6_:label"
+          >
+            <p
+              class="css-v0otzr"
+            >
+              a
+              ) 
+              Customers requests an unusually amount or given a fictitious names
+            </p>
+          </span>
+        </label>
+        <label
+          class="chakra-checkbox__root css-1v6lsq6"
+          data-part="root"
+          data-scope="checkbox"
+          data-state="unchecked"
+          dir="ltr"
+          for="checkbox:_r_7_:input"
+          id="checkbox:_r_7_"
+        >
+          <input
+            aria-invalid="false"
+            aria-labelledby="checkbox:_r_7_:label"
+            id="checkbox:_r_7_:input"
+            style="border: 0px; height: 1px; margin: -1px; overflow: hidden; padding: 0px; position: absolute; width: 1px; white-space: nowrap; word-wrap: normal;"
+            type="checkbox"
+            value="on"
+          />
+          <div
+            aria-hidden="true"
+            class="chakra-checkbox__control css-h9ay06"
+            data-part="control"
+            data-scope="checkbox"
+            data-state="unchecked"
+            dir="ltr"
+            id="checkbox:_r_7_:control"
+          >
+            <svg
+              class="css-wuqtn7"
+              data-state="unchecked"
+              viewBox="0 0 24 24"
+            />
+          </div>
+          <span
+            class="chakra-checkbox__label css-1td7ckk"
+            data-part="label"
+            data-scope="checkbox"
+            data-state="unchecked"
+            dir="ltr"
+            id="checkbox:_r_7_:label"
+          >
+            <p
+              class="css-v0otzr"
+            >
+              b
+              ) 
+              Customer refuses to submit / provide required document / information including key ROBUS policy
+            </p>
+          </span>
+        </label>
+        <label
+          class="chakra-checkbox__root css-1v6lsq6"
+          data-part="root"
+          data-scope="checkbox"
+          data-state="unchecked"
+          dir="ltr"
+          for="checkbox:_r_8_:input"
+          id="checkbox:_r_8_"
+        >
+          <input
+            aria-invalid="false"
+            aria-labelledby="checkbox:_r_8_:label"
+            id="checkbox:_r_8_:input"
+            style="border: 0px; height: 1px; margin: -1px; overflow: hidden; padding: 0px; position: absolute; width: 1px; white-space: nowrap; word-wrap: normal;"
+            type="checkbox"
+            value="on"
+          />
+          <div
+            aria-hidden="true"
+            class="chakra-checkbox__control css-h9ay06"
+            data-part="control"
+            data-scope="checkbox"
+            data-state="unchecked"
+            dir="ltr"
+            id="checkbox:_r_8_:control"
+          >
+            <svg
+              class="css-wuqtn7"
+              data-state="unchecked"
+              viewBox="0 0 24 24"
+            />
+          </div>
+          <span
+            class="chakra-checkbox__label css-1td7ckk"
+            data-part="label"
+            data-scope="checkbox"
+            data-state="unchecked"
+            dir="ltr"
+            id="checkbox:_r_8_:label"
+          >
+            <p
+              class="css-v0otzr"
+            >
+              c
+              ) 
+              Customer not allowed to open an account based on instructions from governing authorities, Public Policy, Indonesia policy
+            </p>
+          </span>
+        </label>
+        <label
+          class="chakra-checkbox__root css-1v6lsq6"
+          data-part="root"
+          data-scope="checkbox"
+          data-state="unchecked"
+          dir="ltr"
+          for="checkbox:_r_9_:input"
+          id="checkbox:_r_9_"
+        >
+          <input
+            aria-invalid="false"
+            aria-labelledby="checkbox:_r_9_:label"
+            id="checkbox:_r_9_:input"
+            style="border: 0px; height: 1px; margin: -1px; overflow: hidden; padding: 0px; position: absolute; width: 1px; white-space: nowrap; word-wrap: normal;"
+            type="checkbox"
+            value="on"
+          />
+          <div
+            aria-hidden="true"
+            class="chakra-checkbox__control css-h9ay06"
+            data-part="control"
+            data-scope="checkbox"
+            data-state="unchecked"
+            dir="ltr"
+            id="checkbox:_r_9_:control"
+          >
+            <svg
+              class="css-wuqtn7"
+              data-state="unchecked"
+              viewBox="0 0 24 24"
+            />
+          </div>
+          <span
+            class="chakra-checkbox__label css-1td7ckk"
+            data-part="label"
+            data-scope="checkbox"
+            data-state="unchecked"
+            dir="ltr"
+            id="checkbox:_r_9_:label"
+          >
+            <p
+              class="css-v0otzr"
+            >
+              d
+              ) 
+              Customer doing transactions of a dual book or provide false account to be used by dual/fronts
+            </p>
+          </span>
+        </label>
+        <label
+          class="chakra-checkbox__root css-1v6lsq6"
+          data-part="root"
+          data-scope="checkbox"
+          data-state="unchecked"
+          dir="ltr"
+          for="checkbox:_r_a_:input"
+          id="checkbox:_r_a_"
+        >
+          <input
+            aria-invalid="false"
+            aria-labelledby="checkbox:_r_a_:label"
+            id="checkbox:_r_a_:input"
+            style="border: 0px; height: 1px; margin: -1px; overflow: hidden; padding: 0px; position: absolute; width: 1px; white-space: nowrap; word-wrap: normal;"
+            type="checkbox"
+            value="on"
+          />
+          <div
+            aria-hidden="true"
+            class="chakra-checkbox__control css-h9ay06"
+            data-part="control"
+            data-scope="checkbox"
+            data-state="unchecked"
+            dir="ltr"
+            id="checkbox:_r_a_:control"
+          >
+            <svg
+              class="css-wuqtn7"
+              data-state="unchecked"
+              viewBox="0 0 24 24"
+            />
+          </div>
+          <span
+            class="chakra-checkbox__label css-1td7ckk"
+            data-part="label"
+            data-scope="checkbox"
+            data-state="unchecked"
+            dir="ltr"
+            id="checkbox:_r_a_:label"
+          >
+            <p
+              class="css-v0otzr"
+            >
+              e
+              ) 
+              Customer having bearer shares
+            </p>
+          </span>
+        </label>
+        <label
+          class="chakra-checkbox__root css-1v6lsq6"
+          data-part="root"
+          data-scope="checkbox"
+          data-state="unchecked"
+          dir="ltr"
+          for="checkbox:_r_b_:input"
+          id="checkbox:_r_b_"
+        >
+          <input
+            aria-invalid="false"
+            aria-labelledby="checkbox:_r_b_:label"
+            id="checkbox:_r_b_:input"
+            style="border: 0px; height: 1px; margin: -1px; overflow: hidden; padding: 0px; position: absolute; width: 1px; white-space: nowrap; word-wrap: normal;"
+            type="checkbox"
+            value="on"
+          />
+          <div
+            aria-hidden="true"
+            class="chakra-checkbox__control css-h9ay06"
+            data-part="control"
+            data-scope="checkbox"
+            data-state="unchecked"
+            dir="ltr"
+            id="checkbox:_r_b_:control"
+          >
+            <svg
+              class="css-wuqtn7"
+              data-state="unchecked"
+              viewBox="0 0 24 24"
+            />
+          </div>
+          <span
+            class="chakra-checkbox__label css-1td7ckk"
+            data-part="label"
+            data-scope="checkbox"
+            data-state="unchecked"
+            dir="ltr"
+            id="checkbox:_r_b_:label"
+          >
+            <p
+              class="css-v0otzr"
+            >
+              f
+              ) 
+              None of the above
+            </p>
+          </span>
+        </label>
+      </div>
+    </div>
+    <div
+      class="css-1a7asma"
+    >
+      <button
+        class="chakra-button css-8hh7qw"
+        type="button"
+      >
+        Save and Continue Edit
+      </button>
+      <button
+        class="chakra-button css-eqm1rn"
+        type="button"
+      >
+        Save and End Edit
+      </button>
+      <button
+        class="chakra-button css-1llzwip"
+        disabled=""
+        type="button"
+      >
+        Next
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`CustomerInfoStep should match snapshot in read-only mode 1`] = `
+<div>
+  <script
+    nonce=""
+  >
+    ((e,s,n,l,o,d,u,h)=&gt;{let m=document.documentElement,w=["light","dark"];function p(r){(Array.isArray(e)?e:[e]).forEach(y=&gt;{let k=y==="class",S=k&&d?o.map(f=&gt;d[f]||f):o;k?(m.classList.remove(...S),m.classList.add(d&&d[r]?d[r]:r)):m.setAttribute(y,r)}),C(r)}function C(r){h&&w.includes(r)&&(m.style.colorScheme=r)}function a(){return window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light"}if(l)p(l);else try{let r=localStorage.getItem(s)||n,y=u&&r==="system"?a():r;p(y)}catch(r){}})("class","theme","light",null,["light","dark"],null,false,true)
+  </script>
+  <div>
+    <div
+      class="css-1qjxr60"
+    >
+      <div
+        class="chakra-stack css-wubxq4"
+      >
+        <div
+          class="chakra-stack css-141cw8v"
+        >
+          <svg
+            aria-hidden="true"
+            class="lucide lucide-pencil"
+            fill="none"
+            height="12"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+            width="12"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z"
+            />
+            <path
+              d="m15 5 4 4"
+            />
+          </svg>
+          <p
+            class="css-5tdwbq"
+          >
+            Editable by Maker
+          </p>
+        </div>
+        <div
+          class="chakra-stack css-141cw8v"
+        >
+          <svg
+            aria-hidden="true"
+            class="lucide lucide-lock"
+            fill="none"
+            height="12"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+            width="12"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect
+              height="11"
+              rx="2"
+              ry="2"
+              width="18"
+              x="3"
+              y="11"
+            />
+            <path
+              d="M7 11V7a5 5 0 0 1 10 0v4"
+            />
+          </svg>
+          <p
+            class="css-7lrzga"
+          >
+            System-managed / read-only
+          </p>
+        </div>
+      </div>
+    </div>
+    <div
+      class="css-wsjc4n"
+    >
+      <div>
+        <div
+          class="chakra-stack css-dh3r6g"
+        >
+          <p
+            class="css-zi85lw"
+          >
+            Customer Type
+          </p>
+        </div>
+        <input
+          class="chakra-input css-1ragpyb"
+          readonly=""
+          type="text"
+          value="31 - Corporate Japanese"
+        />
+      </div>
+      <div>
+        <div
+          class="chakra-stack css-dh3r6g"
+        >
+          <p
+            class="css-zi85lw"
+          >
+            Checklist Status
+          </p>
+        </div>
+        <input
+          class="chakra-input css-1ragpyb"
+          readonly=""
+          type="text"
+          value="Pending"
+        />
+      </div>
+      <div>
+        <div
+          class="chakra-stack css-dh3r6g"
+        >
+          <p
+            class="css-zi85lw"
+          >
+            Checklist Stage
+          </p>
+        </div>
+        <input
+          class="chakra-input css-1ragpyb"
+          readonly=""
+          type="text"
+          value="KYCprogress"
+        />
+      </div>
+    </div>
+    <h2
+      class="chakra-heading css-egmvld"
+    >
+      Basic Information
+    </h2>
+    <div
+      class="css-149wrgx"
+    >
+      <div>
+        <div
+          class="chakra-stack css-dh3r6g"
+        >
+          <p
+            class="css-zi85lw"
+          >
+            CAP ID
+          </p>
+        </div>
+        <input
+          class="chakra-input css-1ragpyb"
+          readonly=""
+          type="text"
+          value="CAP-2024-001"
+        />
+      </div>
+      <div>
+        <div
+          class="chakra-stack css-dh3r6g"
+        >
+          <p
+            class="css-zi85lw"
+          >
+            BES Reference No.
+          </p>
+        </div>
+        <input
+          class="chakra-input css-1ragpyb"
+          readonly=""
+          type="text"
+          value="BES-998877"
+        />
+      </div>
+      <div>
+        <div
+          class="chakra-stack css-dh3r6g"
+        >
+          <p
+            class="css-zi85lw"
+          >
+            CIF No.
+          </p>
+        </div>
+        <input
+          class="chakra-input css-1ragpyb"
+          readonly=""
+          type="text"
+          value="CIF12345678"
+        />
+      </div>
+      <div>
+        <div
+          class="chakra-stack css-dh3r6g"
+        >
+          <p
+            class="css-zi85lw"
+          >
+            Customer Name
+          </p>
+        </div>
+        <input
+          class="chakra-input css-1ragpyb"
+          readonly=""
+          type="text"
+          value="SUZUKI MOTOR CORPORATION"
+        />
+      </div>
+      <div>
+        <div
+          class="chakra-stack css-dh3r6g"
+        >
+          <p
+            class="css-zi85lw"
+          >
+            Formerly Known As
+          </p>
+        </div>
+        <input
+          class="chakra-input css-1ragpyb"
+          readonly=""
+          type="text"
+          value="-"
+        />
+      </div>
+      <div>
+        <div
+          class="chakra-stack css-dh3r6g"
+        >
+          <p
+            class="css-zi85lw"
+          >
+            Business Name/Also Known As
+          </p>
+        </div>
+        <input
+          class="chakra-input css-1ragpyb"
+          readonly=""
+          type="text"
+          value="SUZUKI MOTOR"
+        />
+      </div>
+      <div>
+        <div
+          class="chakra-stack css-dh3r6g"
+        >
+          <p
+            class="css-zi85lw"
+          >
+            Date of Establishment
+          </p>
+        </div>
+        <input
+          class="chakra-input css-1ragpyb"
+          readonly=""
+          type="text"
+          value="15 / 03 / 1920"
+        />
+      </div>
+      <div>
+        <div
+          class="chakra-stack css-dh3r6g"
+        >
+          <p
+            class="css-zi85lw"
+          >
+            Legal Entity Type
+          </p>
+        </div>
+        <input
+          class="chakra-input css-1ragpyb"
+          readonly=""
+          type="text"
+          value="Joint Stock Company"
+        />
+      </div>
+      <div>
+        <div
+          class="chakra-stack css-dh3r6g"
+        >
+          <p
+            class="css-zi85lw"
+          >
+            Legal Entity Characteristic
+          </p>
+        </div>
+        <input
+          class="chakra-input css-1ragpyb"
+          readonly=""
+          type="text"
+          value="Publicly Listed"
+        />
+      </div>
+      <div>
+        <div
+          class="chakra-stack css-dh3r6g"
+        >
+          <p
+            class="css-zi85lw"
+          >
+            Line of business
+          </p>
+        </div>
+        <input
+          class="chakra-input css-1ragpyb"
+          readonly=""
+          type="text"
+          value="Automotive Manufacturing"
+        />
+      </div>
+      <div>
+        <div
+          class="chakra-stack css-dh3r6g"
+        >
+          <p
+            class="css-zi85lw"
+          >
+            Register Address (Country)
+          </p>
+        </div>
+        <input
+          class="chakra-input css-1ragpyb"
+          readonly=""
+          type="text"
+          value="Japan"
+        />
+      </div>
+      <div>
+        <div
+          class="chakra-stack css-dh3r6g"
+        >
+          <p
+            class="css-zi85lw"
+          >
+            Correspondence Address (Country)
+          </p>
+        </div>
+        <input
+          class="chakra-input css-1ragpyb"
+          readonly=""
+          type="text"
+          value="Japan"
+        />
+      </div>
+      <div>
+        <div
+          class="chakra-stack css-dh3r6g"
+        >
+          <p
+            class="css-zi85lw"
+          >
+            RM/RO Name
+          </p>
+        </div>
+        <input
+          class="chakra-input css-1ragpyb"
+          readonly=""
+          type="text"
+          value="Ichiro Tanaka"
+        />
+      </div>
+      <div>
+        <div
+          class="chakra-stack css-dh3r6g"
+        >
+          <p
+            class="css-zi85lw"
+          >
+            RM/RO Code
+          </p>
+        </div>
+        <input
+          class="chakra-input css-1ragpyb"
+          readonly=""
+          type="text"
+          value="RM001"
+        />
+      </div>
+      <div>
+        <div
+          class="chakra-stack css-dh3r6g"
+        >
+          <p
+            class="css-zi85lw"
+          >
+            Department
+          </p>
+        </div>
+        <input
+          class="chakra-input css-1ragpyb"
+          readonly=""
+          type="text"
+          value="Corporate Banking"
+        />
+      </div>
+      <div>
+        <div
+          class="chakra-stack css-dh3r6g"
+        >
+          <p
+            class="css-zi85lw"
+          >
+            Final Risk Rating
+          </p>
+        </div>
+        <input
+          class="chakra-input css-1ragpyb"
+          readonly=""
+          type="text"
+          value="---"
+        />
+      </div>
+      <div>
+        <div
+          class="chakra-stack css-dh3r6g"
+        >
+          <p
+            class="css-zi85lw"
+          >
+            Risk Score
+          </p>
+        </div>
+        <input
+          class="chakra-input css-1ragpyb"
+          readonly=""
+          type="text"
+          value="---"
+        />
+      </div>
+      <div>
+        <div
+          class="chakra-stack css-dh3r6g"
+        >
+          <p
+            class="css-zi85lw"
+          >
+            Creation Date
+          </p>
+        </div>
+        <input
+          class="chakra-input css-1ragpyb"
+          readonly=""
+          type="text"
+          value="2024-01-10"
+        />
+      </div>
+    </div>
+    <div
+      class="css-ohrnja"
+    >
+      <div>
+        <div
+          class="chakra-stack css-dh3r6g"
+        >
+          <p
+            class="css-zi85lw"
+          >
+            Approval Date
+          </p>
+        </div>
+        <input
+          class="chakra-input css-1ragpyb"
+          readonly=""
+          type="text"
+          value="-"
+        />
+      </div>
+      <div />
+    </div>
+    <h2
+      class="chakra-heading css-egmvld"
+    >
+      Previous Checklist
+    </h2>
+    <div
+      class="css-ohrnja"
+    >
+      <div>
+        <div
+          class="chakra-stack css-dh3r6g"
+        >
+          <p
+            class="css-zi85lw"
+          >
+            Checklist ID
+          </p>
+        </div>
+        <input
+          class="chakra-input css-1ragpyb"
+          readonly=""
+          type="text"
+          value="CHK-2024-0001"
+        />
+      </div>
+      <div>
+        <div
+          class="chakra-stack css-dh3r6g"
+        >
+          <p
+            class="css-zi85lw"
+          >
+            Risk Rating
+          </p>
+        </div>
+        <input
+          class="chakra-input css-1ragpyb"
+          readonly=""
+          type="text"
+          value="Low"
+        />
+      </div>
+      <div>
+        <div
+          class="chakra-stack css-dh3r6g"
+        >
+          <p
+            class="css-zi85lw"
+          >
+            Next Review Due Date
+          </p>
+        </div>
+        <input
+          class="chakra-input css-1ragpyb"
+          readonly=""
+          type="text"
+          value="2025-01-10"
+        />
+      </div>
+      <div>
+        <div
+          class="chakra-stack css-dh3r6g"
+        >
+          <p
+            class="css-zi85lw"
+          >
+            Reviewed To
+          </p>
+        </div>
+        <input
+          class="chakra-input css-1ragpyb"
+          readonly=""
+          type="text"
+          value="---"
+        />
+      </div>
+    </div>
+    <div
+      class="css-eoiiov"
+    >
+      <div
+        class="chakra-stack css-wolr15"
+      >
+        <p
+          class="css-hm1e8g"
+        >
+          *
+        </p>
+        <p
+          class="css-1nisaub"
+        >
+          General checking to prohibit the establishment of banking relationship with non acceptable customers:
+        </p>
+      </div>
+      <div
+        class="chakra-stack css-ixctr8"
+      >
+        <label
+          class="chakra-checkbox__root css-1v6lsq6"
+          data-disabled=""
+          data-part="root"
+          data-scope="checkbox"
+          data-state="unchecked"
+          dir="ltr"
+          for="checkbox:_r_0_:input"
+          id="checkbox:_r_0_"
+        >
+          <input
+            aria-invalid="false"
+            aria-labelledby="checkbox:_r_0_:label"
+            disabled=""
+            id="checkbox:_r_0_:input"
+            style="border: 0px; height: 1px; margin: -1px; overflow: hidden; padding: 0px; position: absolute; width: 1px; white-space: nowrap; word-wrap: normal;"
+            type="checkbox"
+            value="on"
+          />
+          <div
+            aria-hidden="true"
+            class="chakra-checkbox__control css-h9ay06"
+            data-disabled=""
+            data-part="control"
+            data-scope="checkbox"
+            data-state="unchecked"
+            dir="ltr"
+            id="checkbox:_r_0_:control"
+          >
+            <svg
+              class="css-wuqtn7"
+              data-disabled=""
+              data-state="unchecked"
+              viewBox="0 0 24 24"
+            />
+          </div>
+          <span
+            class="chakra-checkbox__label css-1td7ckk"
+            data-disabled=""
+            data-part="label"
+            data-scope="checkbox"
+            data-state="unchecked"
+            dir="ltr"
+            id="checkbox:_r_0_:label"
+          >
+            <p
+              class="css-v0otzr"
+            >
+              a
+              ) 
+              Customers requests an unusually amount or given a fictitious names
+            </p>
+          </span>
+        </label>
+        <label
+          class="chakra-checkbox__root css-1v6lsq6"
+          data-disabled=""
+          data-part="root"
+          data-scope="checkbox"
+          data-state="unchecked"
+          dir="ltr"
+          for="checkbox:_r_1_:input"
+          id="checkbox:_r_1_"
+        >
+          <input
+            aria-invalid="false"
+            aria-labelledby="checkbox:_r_1_:label"
+            disabled=""
+            id="checkbox:_r_1_:input"
+            style="border: 0px; height: 1px; margin: -1px; overflow: hidden; padding: 0px; position: absolute; width: 1px; white-space: nowrap; word-wrap: normal;"
+            type="checkbox"
+            value="on"
+          />
+          <div
+            aria-hidden="true"
+            class="chakra-checkbox__control css-h9ay06"
+            data-disabled=""
+            data-part="control"
+            data-scope="checkbox"
+            data-state="unchecked"
+            dir="ltr"
+            id="checkbox:_r_1_:control"
+          >
+            <svg
+              class="css-wuqtn7"
+              data-disabled=""
+              data-state="unchecked"
+              viewBox="0 0 24 24"
+            />
+          </div>
+          <span
+            class="chakra-checkbox__label css-1td7ckk"
+            data-disabled=""
+            data-part="label"
+            data-scope="checkbox"
+            data-state="unchecked"
+            dir="ltr"
+            id="checkbox:_r_1_:label"
+          >
+            <p
+              class="css-v0otzr"
+            >
+              b
+              ) 
+              Customer refuses to submit / provide required document / information including key ROBUS policy
+            </p>
+          </span>
+        </label>
+        <label
+          class="chakra-checkbox__root css-1v6lsq6"
+          data-disabled=""
+          data-part="root"
+          data-scope="checkbox"
+          data-state="unchecked"
+          dir="ltr"
+          for="checkbox:_r_2_:input"
+          id="checkbox:_r_2_"
+        >
+          <input
+            aria-invalid="false"
+            aria-labelledby="checkbox:_r_2_:label"
+            disabled=""
+            id="checkbox:_r_2_:input"
+            style="border: 0px; height: 1px; margin: -1px; overflow: hidden; padding: 0px; position: absolute; width: 1px; white-space: nowrap; word-wrap: normal;"
+            type="checkbox"
+            value="on"
+          />
+          <div
+            aria-hidden="true"
+            class="chakra-checkbox__control css-h9ay06"
+            data-disabled=""
+            data-part="control"
+            data-scope="checkbox"
+            data-state="unchecked"
+            dir="ltr"
+            id="checkbox:_r_2_:control"
+          >
+            <svg
+              class="css-wuqtn7"
+              data-disabled=""
+              data-state="unchecked"
+              viewBox="0 0 24 24"
+            />
+          </div>
+          <span
+            class="chakra-checkbox__label css-1td7ckk"
+            data-disabled=""
+            data-part="label"
+            data-scope="checkbox"
+            data-state="unchecked"
+            dir="ltr"
+            id="checkbox:_r_2_:label"
+          >
+            <p
+              class="css-v0otzr"
+            >
+              c
+              ) 
+              Customer not allowed to open an account based on instructions from governing authorities, Public Policy, Indonesia policy
+            </p>
+          </span>
+        </label>
+        <label
+          class="chakra-checkbox__root css-1v6lsq6"
+          data-disabled=""
+          data-part="root"
+          data-scope="checkbox"
+          data-state="unchecked"
+          dir="ltr"
+          for="checkbox:_r_3_:input"
+          id="checkbox:_r_3_"
+        >
+          <input
+            aria-invalid="false"
+            aria-labelledby="checkbox:_r_3_:label"
+            disabled=""
+            id="checkbox:_r_3_:input"
+            style="border: 0px; height: 1px; margin: -1px; overflow: hidden; padding: 0px; position: absolute; width: 1px; white-space: nowrap; word-wrap: normal;"
+            type="checkbox"
+            value="on"
+          />
+          <div
+            aria-hidden="true"
+            class="chakra-checkbox__control css-h9ay06"
+            data-disabled=""
+            data-part="control"
+            data-scope="checkbox"
+            data-state="unchecked"
+            dir="ltr"
+            id="checkbox:_r_3_:control"
+          >
+            <svg
+              class="css-wuqtn7"
+              data-disabled=""
+              data-state="unchecked"
+              viewBox="0 0 24 24"
+            />
+          </div>
+          <span
+            class="chakra-checkbox__label css-1td7ckk"
+            data-disabled=""
+            data-part="label"
+            data-scope="checkbox"
+            data-state="unchecked"
+            dir="ltr"
+            id="checkbox:_r_3_:label"
+          >
+            <p
+              class="css-v0otzr"
+            >
+              d
+              ) 
+              Customer doing transactions of a dual book or provide false account to be used by dual/fronts
+            </p>
+          </span>
+        </label>
+        <label
+          class="chakra-checkbox__root css-1v6lsq6"
+          data-disabled=""
+          data-part="root"
+          data-scope="checkbox"
+          data-state="unchecked"
+          dir="ltr"
+          for="checkbox:_r_4_:input"
+          id="checkbox:_r_4_"
+        >
+          <input
+            aria-invalid="false"
+            aria-labelledby="checkbox:_r_4_:label"
+            disabled=""
+            id="checkbox:_r_4_:input"
+            style="border: 0px; height: 1px; margin: -1px; overflow: hidden; padding: 0px; position: absolute; width: 1px; white-space: nowrap; word-wrap: normal;"
+            type="checkbox"
+            value="on"
+          />
+          <div
+            aria-hidden="true"
+            class="chakra-checkbox__control css-h9ay06"
+            data-disabled=""
+            data-part="control"
+            data-scope="checkbox"
+            data-state="unchecked"
+            dir="ltr"
+            id="checkbox:_r_4_:control"
+          >
+            <svg
+              class="css-wuqtn7"
+              data-disabled=""
+              data-state="unchecked"
+              viewBox="0 0 24 24"
+            />
+          </div>
+          <span
+            class="chakra-checkbox__label css-1td7ckk"
+            data-disabled=""
+            data-part="label"
+            data-scope="checkbox"
+            data-state="unchecked"
+            dir="ltr"
+            id="checkbox:_r_4_:label"
+          >
+            <p
+              class="css-v0otzr"
+            >
+              e
+              ) 
+              Customer having bearer shares
+            </p>
+          </span>
+        </label>
+        <label
+          class="chakra-checkbox__root css-1v6lsq6"
+          data-disabled=""
+          data-part="root"
+          data-scope="checkbox"
+          data-state="unchecked"
+          dir="ltr"
+          for="checkbox:_r_5_:input"
+          id="checkbox:_r_5_"
+        >
+          <input
+            aria-invalid="false"
+            aria-labelledby="checkbox:_r_5_:label"
+            disabled=""
+            id="checkbox:_r_5_:input"
+            style="border: 0px; height: 1px; margin: -1px; overflow: hidden; padding: 0px; position: absolute; width: 1px; white-space: nowrap; word-wrap: normal;"
+            type="checkbox"
+            value="on"
+          />
+          <div
+            aria-hidden="true"
+            class="chakra-checkbox__control css-h9ay06"
+            data-disabled=""
+            data-part="control"
+            data-scope="checkbox"
+            data-state="unchecked"
+            dir="ltr"
+            id="checkbox:_r_5_:control"
+          >
+            <svg
+              class="css-wuqtn7"
+              data-disabled=""
+              data-state="unchecked"
+              viewBox="0 0 24 24"
+            />
+          </div>
+          <span
+            class="chakra-checkbox__label css-1td7ckk"
+            data-disabled=""
+            data-part="label"
+            data-scope="checkbox"
+            data-state="unchecked"
+            dir="ltr"
+            id="checkbox:_r_5_:label"
+          >
+            <p
+              class="css-v0otzr"
+            >
+              f
+              ) 
+              None of the above
+            </p>
+          </span>
+        </label>
+      </div>
+    </div>
+    <div
+      class="css-1a7asma"
+    >
+      <button
+        class="chakra-button css-1llzwip"
+        type="button"
+      >
+        Next
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`CustomerInfoStep should match snapshot when loading 1`] = `
+<div>
+  <script
+    nonce=""
+  >
+    ((e,s,n,l,o,d,u,h)=&gt;{let m=document.documentElement,w=["light","dark"];function p(r){(Array.isArray(e)?e:[e]).forEach(y=&gt;{let k=y==="class",S=k&&d?o.map(f=&gt;d[f]||f):o;k?(m.classList.remove(...S),m.classList.add(d&&d[r]?d[r]:r)):m.setAttribute(y,r)}),C(r)}function C(r){h&&w.includes(r)&&(m.style.colorScheme=r)}function a(){return window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light"}if(l)p(l);else try{let r=localStorage.getItem(s)||n,y=u&&r==="system"?a():r;p(y)}catch(r){}})("class","theme","light",null,["light","dark"],null,false,true)
+  </script>
+  <div>
+    <div
+      class="css-wsjc4n"
+    >
+      <div>
+        <div
+          class="chakra-skeleton css-1voxtnu"
+        />
+        <div
+          class="chakra-skeleton css-4v0w31"
+        />
+      </div>
+      <div>
+        <div
+          class="chakra-skeleton css-1voxtnu"
+        />
+        <div
+          class="chakra-skeleton css-4v0w31"
+        />
+      </div>
+      <div>
+        <div
+          class="chakra-skeleton css-1voxtnu"
+        />
+        <div
+          class="chakra-skeleton css-4v0w31"
+        />
+      </div>
+    </div>
+    <div
+      class="chakra-skeleton css-1015vr1"
+    />
+    <div
+      class="css-ohrnja"
+    >
+      <div>
+        <div
+          class="chakra-skeleton css-1voxtnu"
+        />
+        <div
+          class="chakra-skeleton css-4v0w31"
+        />
+      </div>
+      <div>
+        <div
+          class="chakra-skeleton css-1voxtnu"
+        />
+        <div
+          class="chakra-skeleton css-4v0w31"
+        />
+      </div>
+      <div>
+        <div
+          class="chakra-skeleton css-1voxtnu"
+        />
+        <div
+          class="chakra-skeleton css-4v0w31"
+        />
+      </div>
+      <div>
+        <div
+          class="chakra-skeleton css-1voxtnu"
+        />
+        <div
+          class="chakra-skeleton css-4v0w31"
+        />
+      </div>
+      <div>
+        <div
+          class="chakra-skeleton css-1voxtnu"
+        />
+        <div
+          class="chakra-skeleton css-4v0w31"
+        />
+      </div>
+      <div>
+        <div
+          class="chakra-skeleton css-1voxtnu"
+        />
+        <div
+          class="chakra-skeleton css-4v0w31"
+        />
+      </div>
+      <div>
+        <div
+          class="chakra-skeleton css-1voxtnu"
+        />
+        <div
+          class="chakra-skeleton css-4v0w31"
+        />
+      </div>
+      <div>
+        <div
+          class="chakra-skeleton css-1voxtnu"
+        />
+        <div
+          class="chakra-skeleton css-4v0w31"
+        />
+      </div>
+      <div>
+        <div
+          class="chakra-skeleton css-1voxtnu"
+        />
+        <div
+          class="chakra-skeleton css-4v0w31"
+        />
+      </div>
+      <div>
+        <div
+          class="chakra-skeleton css-1voxtnu"
+        />
+        <div
+          class="chakra-skeleton css-4v0w31"
+        />
+      </div>
+      <div>
+        <div
+          class="chakra-skeleton css-1voxtnu"
+        />
+        <div
+          class="chakra-skeleton css-4v0w31"
+        />
+      </div>
+      <div>
+        <div
+          class="chakra-skeleton css-1voxtnu"
+        />
+        <div
+          class="chakra-skeleton css-4v0w31"
+        />
+      </div>
+      <div>
+        <div
+          class="chakra-skeleton css-1voxtnu"
+        />
+        <div
+          class="chakra-skeleton css-4v0w31"
+        />
+      </div>
+      <div>
+        <div
+          class="chakra-skeleton css-1voxtnu"
+        />
+        <div
+          class="chakra-skeleton css-4v0w31"
+        />
+      </div>
+      <div>
+        <div
+          class="chakra-skeleton css-1voxtnu"
+        />
+        <div
+          class="chakra-skeleton css-4v0w31"
+        />
+      </div>
+      <div>
+        <div
+          class="chakra-skeleton css-1voxtnu"
+        />
+        <div
+          class="chakra-skeleton css-4v0w31"
+        />
+      </div>
+      <div>
+        <div
+          class="chakra-skeleton css-1voxtnu"
+        />
+        <div
+          class="chakra-skeleton css-4v0w31"
+        />
+      </div>
+      <div>
+        <div
+          class="chakra-skeleton css-1voxtnu"
+        />
+        <div
+          class="chakra-skeleton css-4v0w31"
+        />
+      </div>
+    </div>
+    <div
+      class="chakra-skeleton css-1015vr1"
+    />
+    <div
+      class="css-ohrnja"
+    >
+      <div>
+        <div
+          class="chakra-skeleton css-1voxtnu"
+        />
+        <div
+          class="chakra-skeleton css-4v0w31"
+        />
+      </div>
+      <div>
+        <div
+          class="chakra-skeleton css-1voxtnu"
+        />
+        <div
+          class="chakra-skeleton css-4v0w31"
+        />
+      </div>
+      <div>
+        <div
+          class="chakra-skeleton css-1voxtnu"
+        />
+        <div
+          class="chakra-skeleton css-4v0w31"
+        />
+      </div>
+      <div>
+        <div
+          class="chakra-skeleton css-1voxtnu"
+        />
+        <div
+          class="chakra-skeleton css-4v0w31"
+        />
+      </div>
+    </div>
+    <div
+      class="css-eoiiov"
+    >
+      <div
+        class="chakra-skeleton css-7fxh6h"
+      />
+      <div
+        class="chakra-stack css-12txhwx"
+      >
+        <div
+          class="chakra-stack css-vyigcq"
+        >
+          <div
+            class="chakra-skeleton css-a9hy05"
+          />
+          <div
+            class="chakra-skeleton css-imyhnx"
+          />
+        </div>
+        <div
+          class="chakra-stack css-vyigcq"
+        >
+          <div
+            class="chakra-skeleton css-a9hy05"
+          />
+          <div
+            class="chakra-skeleton css-eeyxd5"
+          />
+        </div>
+        <div
+          class="chakra-stack css-vyigcq"
+        >
+          <div
+            class="chakra-skeleton css-a9hy05"
+          />
+          <div
+            class="chakra-skeleton css-owymj0"
+          />
+        </div>
+        <div
+          class="chakra-stack css-vyigcq"
+        >
+          <div
+            class="chakra-skeleton css-a9hy05"
+          />
+          <div
+            class="chakra-skeleton css-imyhnx"
+          />
+        </div>
+        <div
+          class="chakra-stack css-vyigcq"
+        >
+          <div
+            class="chakra-skeleton css-a9hy05"
+          />
+          <div
+            class="chakra-skeleton css-eeyxd5"
+          />
+        </div>
+        <div
+          class="chakra-stack css-vyigcq"
+        >
+          <div
+            class="chakra-skeleton css-a9hy05"
+          />
+          <div
+            class="chakra-skeleton css-owymj0"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

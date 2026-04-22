@@ -5,4 +5,5 @@ export type {
   PaginatedData,
   PaginatedResponse,
   ApiError,
+  ApiEkycParameterResponse,
 } from './types';

@@ -1,0 +1,573 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`OnboardingSidebar should match snapshot with disabled steps 1`] = `
+<div>
+  <script
+    nonce=""
+  >
+    ((e,s,n,l,o,d,u,h)=&gt;{let m=document.documentElement,w=["light","dark"];function p(r){(Array.isArray(e)?e:[e]).forEach(y=&gt;{let k=y==="class",S=k&&d?o.map(f=&gt;d[f]||f):o;k?(m.classList.remove(...S),m.classList.add(d&&d[r]?d[r]:r)):m.setAttribute(y,r)}),C(r)}function C(r){h&&w.includes(r)&&(m.style.colorScheme=r)}function a(){return window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light"}if(l)p(l);else try{let r=localStorage.getItem(s)||n,y=u&&r==="system"?a():r;p(y)}catch(r){}})("class","theme","light",null,["light","dark"],null,false,true)
+  </script>
+  <div
+    class="css-1nvq33t"
+  >
+    <div
+      class="chakra-stack css-wpf3zd"
+    >
+      <button
+        aria-disabled="false"
+        class="css-l7cc70"
+      >
+        <svg
+          aria-hidden="true"
+          class="lucide lucide-clipboard-list"
+          fill="none"
+          height="15"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          viewBox="0 0 24 24"
+          width="15"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <rect
+            height="4"
+            rx="1"
+            ry="1"
+            width="8"
+            x="8"
+            y="2"
+          />
+          <path
+            d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"
+          />
+          <path
+            d="M12 11h4"
+          />
+          <path
+            d="M12 16h4"
+          />
+          <path
+            d="M8 11h.01"
+          />
+          <path
+            d="M8 16h.01"
+          />
+        </svg>
+        <p
+          class="css-h0zkd7"
+        >
+          Customer Info
+        </p>
+      </button>
+      <button
+        aria-disabled="true"
+        class="css-a1h8ak"
+      >
+        <svg
+          aria-hidden="true"
+          class="lucide lucide-users"
+          fill="none"
+          height="15"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          viewBox="0 0 24 24"
+          width="15"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"
+          />
+          <path
+            d="M16 3.128a4 4 0 0 1 0 7.744"
+          />
+          <path
+            d="M22 21v-2a4 4 0 0 0-3-3.87"
+          />
+          <circle
+            cx="9"
+            cy="7"
+            r="4"
+          />
+        </svg>
+        <p
+          class="css-11ah6hu"
+        >
+          Ownership/Shareholder
+        </p>
+        <svg
+          aria-hidden="true"
+          class="lucide lucide-lock"
+          fill="none"
+          height="12"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          viewBox="0 0 24 24"
+          width="12"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <rect
+            height="11"
+            rx="2"
+            ry="2"
+            width="18"
+            x="3"
+            y="11"
+          />
+          <path
+            d="M7 11V7a5 5 0 0 1 10 0v4"
+          />
+        </svg>
+      </button>
+      <button
+        aria-disabled="true"
+        class="css-a1h8ak"
+      >
+        <svg
+          aria-hidden="true"
+          class="lucide lucide-user-cog"
+          fill="none"
+          height="15"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          viewBox="0 0 24 24"
+          width="15"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M10 15H6a4 4 0 0 0-4 4v2"
+          />
+          <path
+            d="m14.305 16.53.923-.382"
+          />
+          <path
+            d="m15.228 13.852-.923-.383"
+          />
+          <path
+            d="m16.852 12.228-.383-.923"
+          />
+          <path
+            d="m16.852 17.772-.383.924"
+          />
+          <path
+            d="m19.148 12.228.383-.923"
+          />
+          <path
+            d="m19.53 18.696-.382-.924"
+          />
+          <path
+            d="m20.772 13.852.924-.383"
+          />
+          <path
+            d="m20.772 16.148.924.383"
+          />
+          <circle
+            cx="18"
+            cy="15"
+            r="3"
+          />
+          <circle
+            cx="9"
+            cy="7"
+            r="4"
+          />
+        </svg>
+        <p
+          class="css-11ah6hu"
+        >
+          Management & UBO
+        </p>
+        <svg
+          aria-hidden="true"
+          class="lucide lucide-lock"
+          fill="none"
+          height="12"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          viewBox="0 0 24 24"
+          width="12"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <rect
+            height="11"
+            rx="2"
+            ry="2"
+            width="18"
+            x="3"
+            y="11"
+          />
+          <path
+            d="M7 11V7a5 5 0 0 1 10 0v4"
+          />
+        </svg>
+      </button>
+      <button
+        aria-disabled="true"
+        class="css-a1h8ak"
+      >
+        <svg
+          aria-hidden="true"
+          class="lucide lucide-arrow-left-right"
+          fill="none"
+          height="15"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          viewBox="0 0 24 24"
+          width="15"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M8 3 4 7l4 4"
+          />
+          <path
+            d="M4 7h16"
+          />
+          <path
+            d="m16 21 4-4-4-4"
+          />
+          <path
+            d="M20 17H4"
+          />
+        </svg>
+        <p
+          class="css-11ah6hu"
+        >
+          Counterparties
+        </p>
+        <svg
+          aria-hidden="true"
+          class="lucide lucide-lock"
+          fill="none"
+          height="12"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          viewBox="0 0 24 24"
+          width="12"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <rect
+            height="11"
+            rx="2"
+            ry="2"
+            width="18"
+            x="3"
+            y="11"
+          />
+          <path
+            d="M7 11V7a5 5 0 0 1 10 0v4"
+          />
+        </svg>
+      </button>
+      <button
+        aria-disabled="true"
+        class="css-a1h8ak"
+      >
+        <svg
+          aria-hidden="true"
+          class="lucide lucide-package"
+          fill="none"
+          height="15"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          viewBox="0 0 24 24"
+          width="15"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M11 21.73a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73z"
+          />
+          <path
+            d="M12 22V12"
+          />
+          <polyline
+            points="3.29 7 12 12 20.71 7"
+          />
+          <path
+            d="m7.5 4.27 9 5.15"
+          />
+        </svg>
+        <p
+          class="css-11ah6hu"
+        >
+          Product & Services
+        </p>
+        <svg
+          aria-hidden="true"
+          class="lucide lucide-lock"
+          fill="none"
+          height="12"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          viewBox="0 0 24 24"
+          width="12"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <rect
+            height="11"
+            rx="2"
+            ry="2"
+            width="18"
+            x="3"
+            y="11"
+          />
+          <path
+            d="M7 11V7a5 5 0 0 1 10 0v4"
+          />
+        </svg>
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`OnboardingSidebar should match snapshot with no disabled steps 1`] = `
+<div>
+  <script
+    nonce=""
+  >
+    ((e,s,n,l,o,d,u,h)=&gt;{let m=document.documentElement,w=["light","dark"];function p(r){(Array.isArray(e)?e:[e]).forEach(y=&gt;{let k=y==="class",S=k&&d?o.map(f=&gt;d[f]||f):o;k?(m.classList.remove(...S),m.classList.add(d&&d[r]?d[r]:r)):m.setAttribute(y,r)}),C(r)}function C(r){h&&w.includes(r)&&(m.style.colorScheme=r)}function a(){return window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light"}if(l)p(l);else try{let r=localStorage.getItem(s)||n,y=u&&r==="system"?a():r;p(y)}catch(r){}})("class","theme","light",null,["light","dark"],null,false,true)
+  </script>
+  <div
+    class="css-1nvq33t"
+  >
+    <div
+      class="chakra-stack css-wpf3zd"
+    >
+      <button
+        aria-disabled="false"
+        class="css-l7cc70"
+      >
+        <svg
+          aria-hidden="true"
+          class="lucide lucide-clipboard-list"
+          fill="none"
+          height="15"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          viewBox="0 0 24 24"
+          width="15"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <rect
+            height="4"
+            rx="1"
+            ry="1"
+            width="8"
+            x="8"
+            y="2"
+          />
+          <path
+            d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"
+          />
+          <path
+            d="M12 11h4"
+          />
+          <path
+            d="M12 16h4"
+          />
+          <path
+            d="M8 11h.01"
+          />
+          <path
+            d="M8 16h.01"
+          />
+        </svg>
+        <p
+          class="css-h0zkd7"
+        >
+          Customer Info
+        </p>
+      </button>
+      <button
+        aria-disabled="false"
+        class="css-2g1yxs"
+      >
+        <svg
+          aria-hidden="true"
+          class="lucide lucide-users"
+          fill="none"
+          height="15"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          viewBox="0 0 24 24"
+          width="15"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"
+          />
+          <path
+            d="M16 3.128a4 4 0 0 1 0 7.744"
+          />
+          <path
+            d="M22 21v-2a4 4 0 0 0-3-3.87"
+          />
+          <circle
+            cx="9"
+            cy="7"
+            r="4"
+          />
+        </svg>
+        <p
+          class="css-11ah6hu"
+        >
+          Ownership/Shareholder
+        </p>
+      </button>
+      <button
+        aria-disabled="false"
+        class="css-2g1yxs"
+      >
+        <svg
+          aria-hidden="true"
+          class="lucide lucide-user-cog"
+          fill="none"
+          height="15"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          viewBox="0 0 24 24"
+          width="15"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M10 15H6a4 4 0 0 0-4 4v2"
+          />
+          <path
+            d="m14.305 16.53.923-.382"
+          />
+          <path
+            d="m15.228 13.852-.923-.383"
+          />
+          <path
+            d="m16.852 12.228-.383-.923"
+          />
+          <path
+            d="m16.852 17.772-.383.924"
+          />
+          <path
+            d="m19.148 12.228.383-.923"
+          />
+          <path
+            d="m19.53 18.696-.382-.924"
+          />
+          <path
+            d="m20.772 13.852.924-.383"
+          />
+          <path
+            d="m20.772 16.148.924.383"
+          />
+          <circle
+            cx="18"
+            cy="15"
+            r="3"
+          />
+          <circle
+            cx="9"
+            cy="7"
+            r="4"
+          />
+        </svg>
+        <p
+          class="css-11ah6hu"
+        >
+          Management & UBO
+        </p>
+      </button>
+      <button
+        aria-disabled="false"
+        class="css-2g1yxs"
+      >
+        <svg
+          aria-hidden="true"
+          class="lucide lucide-arrow-left-right"
+          fill="none"
+          height="15"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          viewBox="0 0 24 24"
+          width="15"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M8 3 4 7l4 4"
+          />
+          <path
+            d="M4 7h16"
+          />
+          <path
+            d="m16 21 4-4-4-4"
+          />
+          <path
+            d="M20 17H4"
+          />
+        </svg>
+        <p
+          class="css-11ah6hu"
+        >
+          Counterparties
+        </p>
+      </button>
+      <button
+        aria-disabled="false"
+        class="css-2g1yxs"
+      >
+        <svg
+          aria-hidden="true"
+          class="lucide lucide-package"
+          fill="none"
+          height="15"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          viewBox="0 0 24 24"
+          width="15"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M11 21.73a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73z"
+          />
+          <path
+            d="M12 22V12"
+          />
+          <polyline
+            points="3.29 7 12 12 20.71 7"
+          />
+          <path
+            d="m7.5 4.27 9 5.15"
+          />
+        </svg>
+        <p
+          class="css-11ah6hu"
+        >
+          Product & Services
+        </p>
+      </button>
+    </div>
+  </div>
+</div>
+`;

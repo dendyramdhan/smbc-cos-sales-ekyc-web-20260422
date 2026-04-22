@@ -14,10 +14,11 @@ Architecture & pattern guide untuk tim developer.
 6. [Pattern: Custom Mutation Hook](#pattern-custom-mutation-hook)
 7. [Pattern: Paginated Query](#pattern-paginated-query)
 8. [Pattern: Dependent / Conditional Query](#pattern-dependent--conditional-query)
-9. [Pattern: Optimistic Update](#pattern-optimistic-update)
-10. [SSR Patterns (Next.js App Router)](#ssr-patterns-nextjs-app-router)
-11. [Tips & Best Practices](#tips--best-practices)
-12. [Testing Guide](#testing-guide)
+9. [Pattern: Lazy Query — Fetch on Click](#pattern-lazy-query--fetch-on-click)
+10. [Pattern: Optimistic Update](#pattern-optimistic-update)
+11. [SSR Patterns (Next.js App Router)](#ssr-patterns-nextjs-app-router)
+12. [Tips & Best Practices](#tips--best-practices)
+13. [Testing Guide](#testing-guide)
 
 ---
 
@@ -395,6 +396,173 @@ export const useUserOrders = (userId: string | undefined) =>
     queryFn: () => orderService.getByUser(userId!),
     enabled: !!userId,  // ← tidak akan fetch sampai userId tersedia
   });
+```
+
+---
+
+## Pattern: Lazy Query — Fetch on Click
+
+Secara default, `useQuery` langsung fetch data saat component mount (page onload).
+Untuk trigger fetch **hanya saat user klik tombol** (atau event lain), gunakan
+kombinasi `enabled: false` + `refetch()`.
+
+### Cara Kerja
+
+```
+┌──────────────────────────────────┐
+│  Component mount                 │
+│  useQuery({ enabled: false })    │  ← TIDAK fetch otomatis
+│  status: 'pending'               │
+│  fetchStatus: 'idle'             │
+└──────────────┬───────────────────┘
+               │  user klik tombol
+               │  → refetch()
+               ▼
+┌──────────────────────────────────┐
+│  Fetching...                     │
+│  fetchStatus: 'fetching'         │
+│  isFetching: true                │
+└──────────────┬───────────────────┘
+               │  response received
+               ▼
+┌──────────────────────────────────┐
+│  Data tersedia                   │
+│  status: 'success'               │
+│  fetchStatus: 'idle'             │
+└──────────────────────────────────┘
+```
+
+### Custom Hook
+
+```ts
+// src/hooks/queries/useUserQueries.ts
+
+export const useLazyUser = (
+  id: string,
+  options?: Partial<UseQueryOptions<ApiResponse<User>>>,
+) =>
+  useQuery({
+    queryKey: userKeys.detail(id),
+    queryFn: () => userService.getUserById(id),
+    enabled: false,   // ← key: tidak fetch saat mount
+    ...options,
+  });
+```
+
+### Usage di Component — Basic
+
+```tsx
+'use client';
+
+import { useLazyUser } from '@/hooks';
+
+export default function UserLookup() {
+  const [userId, setUserId] = useState('');
+  const { data, isFetching, refetch } = useLazyUser(userId);
+
+  const handleSearch = () => {
+    if (userId.trim()) {
+      refetch();  // ← trigger fetch manual
+    }
+  };
+
+  return (
+    <div>
+      <input
+        value={userId}
+        onChange={(e) => setUserId(e.target.value)}
+        placeholder="Enter user ID"
+      />
+      <button onClick={handleSearch} disabled={isFetching}>
+        {isFetching ? 'Searching...' : 'Search'}
+      </button>
+
+      {data && (
+        <div>
+          <p>Name: {data.data.name}</p>
+          <p>Email: {data.data.email}</p>
+        </div>
+      )}
+    </div>
+  );
+}
+```
+
+### Usage di Component — Dynamic Parameter
+
+Jika parameter baru diketahui saat klik (misalnya dari input), kombinasikan
+`enabled` dengan state:
+
+```tsx
+'use client';
+
+import { useState } from 'react';
+import { useUsers } from '@/hooks';
+
+export default function UserSearchOnClick() {
+  const [search, setSearch] = useState('');
+  const [submittedSearch, setSubmittedSearch] = useState<string | null>(null);
+
+  // Query hanya jalan ketika submittedSearch !== null
+  const { data, isFetching, error } = useUsers(
+    { page: 1, limit: 10, search: submittedSearch ?? undefined },
+    { enabled: submittedSearch !== null },  // ← fetch hanya setelah submit
+  );
+
+  const handleClick = () => {
+    setSubmittedSearch(search);  // ← set state → enabled jadi true → auto fetch
+  };
+
+  return (
+    <div>
+      <input
+        value={search}
+        onChange={(e) => setSearch(e.target.value)}
+        placeholder="Cari user..."
+      />
+      <button onClick={handleClick} disabled={isFetching}>
+        {isFetching ? 'Loading...' : 'Cari'}
+      </button>
+
+      {error && <p>Error: {error.message}</p>}
+
+      {data && (
+        <ul>
+          {data.data.items.map((user) => (
+            <li key={user.id}>{user.name} — {user.email}</li>
+          ))}
+        </ul>
+      )}
+    </div>
+  );
+}
+```
+
+### `refetch()` vs `enabled` State — Kapan Pakai Yang Mana?
+
+| Pendekatan | Cara | Cocok untuk |
+|------------|------|-------------|
+| `enabled: false` + `refetch()` | Panggil `refetch()` di onClick | Parameter sudah diketahui dari awal, hanya timing fetch yang mau dikontrol |
+| `enabled` + state toggle | Set state → `enabled` jadi `true` → auto fetch | Parameter baru diketahui saat klik (dari input/form), atau ingin react ke perubahan param |
+
+> **Tip:** Pendekatan state toggle lebih **idiomatic** karena memanfaatkan
+> reactivity TanStack Query — saat `queryKey` berubah + `enabled: true`,
+> query otomatis fetch ulang tanpa perlu panggil `refetch()` manual.
+
+### Penting: Status Check untuk Lazy Query
+
+Karena `enabled: false`, state awal bukan `isLoading: true` seperti biasa.
+Gunakan `isFetching` untuk menampilkan loading indicator:
+
+```tsx
+// ❌ Jangan pakai isLoading untuk lazy query
+// isLoading = isPending && isFetching
+// Karena enabled: false, isPending tetap true tapi isFetching false
+if (isLoading) return <Spinner />;  // Ini akan SELALU tampil sebelum fetch pertama
+
+// ✅ Gunakan isFetching + cek data
+if (isFetching) return <Spinner />;
+if (!data) return <p>Klik tombol untuk mencari</p>;
 ```
 
 ---

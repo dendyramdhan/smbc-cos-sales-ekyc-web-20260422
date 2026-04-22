@@ -14,4 +14,12 @@ describe('apiConfig', () => {
     expect(API_CONFIG).toHaveProperty('BASE_URL');
     expect(API_CONFIG).toHaveProperty('TIMEOUT');
   });
+
+  it('should have MS_ONBOARDING_API_URL defaulting to /api/onboarding', () => {
+    expect(API_CONFIG.MS_ONBOARDING_API_URL).toBe('/api/onboarding');
+  });
+
+  it('should have MS_EKYC_PARAMETER_API_URL defaulting to /api/ekyc-param', () => {
+    expect(API_CONFIG.MS_EKYC_PARAMETER_API_URL).toBe('/api/ekyc-param');
+  });
 });

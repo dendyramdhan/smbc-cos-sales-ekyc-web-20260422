@@ -11,7 +11,7 @@ export default function Sidebar() {
   return (
     <Flex
       w="280px"
-      bg="brand.900"
+      bg="brand.600"
       borderRight="1px solid"
       borderColor="brand.800"
       direction="column"
@@ -81,7 +81,7 @@ export default function Sidebar() {
         p={4}
         borderTop="1px solid"
         borderColor="brand.800"
-        bg="brand.900"
+        bg="brand.700"
         align="center"
         gap={3}
       >
