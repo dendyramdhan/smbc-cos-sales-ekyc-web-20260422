@@ -5,3 +5,4 @@ export type OnboardingData = CustomerInfoData;
 export * from './customerInfo';
 export * from './forms';
 export * from './ekycParameter';
+export * from './managementUbo';

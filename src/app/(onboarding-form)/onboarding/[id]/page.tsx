@@ -4,7 +4,7 @@ import { useParams } from 'next/navigation';
 import { Box, Flex, Heading, HStack, Button } from '@chakra-ui/react';
 import { Pencil, UserPlus, X } from 'lucide-react';
 import OnboardingSidebar from '@/components/onboarding/OnboardingSidebar';
-import { CustomerInfoStep } from '@/components/onboarding/steps';
+import { CustomerInfoStep, ManagementUboStep } from '@/components/onboarding/steps';
 import RenderIf, { RenderElse } from '@/components/ui/RenderIf';
 import { OnboardingFormProvider, useOnboardingForm } from '@/features/onboarding/OnboardingFormContext';
 
@@ -83,6 +83,9 @@ const OnboardingPage = () => {
           <Box flex={1} minW={0} p={5} bg="white" borderEndRadius="xl" h="100%" overflowY="auto">
             <RenderIf when={activeStep === 'customer-info'}>
               <CustomerInfoStep />
+            </RenderIf>
+            <RenderIf when={activeStep === 'management-ubo'}>
+              <ManagementUboStep />
             </RenderIf>
           </Box>
         </Flex>

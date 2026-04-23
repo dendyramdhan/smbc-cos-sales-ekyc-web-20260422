@@ -9,7 +9,7 @@ import {
   useEffect,
   type ReactNode,
 } from 'react';
-import type { CustomerInfoData } from '@/types/onboarding';
+import type { CustomerInfoData, ManagementUboMember } from '@/types/onboarding';
 import { ONBOARDING_STEPS, OnboardingStepId } from '@/components/onboarding/OnboardingSidebar';
 
 // ---------------------------------------------------------------------------
@@ -17,6 +17,7 @@ import { ONBOARDING_STEPS, OnboardingStepId } from '@/components/onboarding/Onbo
 // ---------------------------------------------------------------------------
 interface OnboardingFormData {
   customerInfo: CustomerInfoData | null;
+  managementUbo: ManagementUboMember[] | null;
 }
 
 // ---------------------------------------------------------------------------
@@ -38,7 +39,8 @@ type FormAction =
   | { type: 'SET_EDITING'; payload: boolean }
   | { type: 'SET_DISABLED_STEPS'; payload: OnboardingStepId[] }
   | { type: 'SET_WARNING'; payload: boolean }
-  | { type: 'UPDATE_CUSTOMER_INFO'; payload: CustomerInfoData };
+  | { type: 'UPDATE_CUSTOMER_INFO'; payload: CustomerInfoData }
+  | { type: 'UPDATE_MANAGEMENT_UBO'; payload: ManagementUboMember[] };
 
 function formReducer(state: FormState, action: FormAction): FormState {
   switch (action.type) {
@@ -56,6 +58,8 @@ function formReducer(state: FormState, action: FormAction): FormState {
       return { ...state, isWarningActiveStep: action.payload };
     case 'UPDATE_CUSTOMER_INFO':
       return { ...state, formData: { ...state.formData, customerInfo: action.payload } };
+    case 'UPDATE_MANAGEMENT_UBO':
+      return { ...state, formData: { ...state.formData, managementUbo: action.payload } };
     default:
       return state;
   }
@@ -84,6 +88,7 @@ interface OnboardingFormContextValue {
   setIsWarningActiveStep: (active: boolean) => void;
   // Form data
   updateCustomerInfo: (data: CustomerInfoData) => void;
+  updateManagementUbo: (members: ManagementUboMember[]) => void;
 }
 
 // ---------------------------------------------------------------------------
@@ -103,7 +108,7 @@ const buildInitialState = (initialStep: string): FormState => ({
   mounted: false,
   activeStep: initialStep,
   isEditing: false,
-  formData: { customerInfo: null },
+  formData: { customerInfo: null, managementUbo: null },
   disabledSteps: [],
   isWarningActiveStep: false,
 });
@@ -159,6 +164,10 @@ export const OnboardingFormProvider = ({
     dispatch({ type: 'UPDATE_CUSTOMER_INFO', payload: data });
   }, []);
 
+  const updateManagementUbo = useCallback((members: ManagementUboMember[]) => {
+    dispatch({ type: 'UPDATE_MANAGEMENT_UBO', payload: members });
+  }, []);
+
   const isAllStepsDisabled = useMemo(() => {
     const otherStepIds = ONBOARDING_STEPS
       .map((s) => s.id)
@@ -176,6 +185,7 @@ export const OnboardingFormProvider = ({
     setDisabledSteps,
     setIsWarningActiveStep,
     updateCustomerInfo,
+    updateManagementUbo,
   }), [
     state,
     isAllStepsDisabled,
@@ -186,6 +196,7 @@ export const OnboardingFormProvider = ({
     setDisabledSteps,
     setIsWarningActiveStep,
     updateCustomerInfo,
+    updateManagementUbo,
   ]);
 
   return (
